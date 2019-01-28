@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Магазин «Глейси»</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Магазин «Глейси»</title>
+</head>
+
+<body>
+  <div class="center">
     <header class="main-header">
-      <img src="./img/logo.svg" alt="Логотип Глейси" />
+      <a href="index.html" class="logo">
+        <img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип Глейси" />
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a href="catalog.html" class="site-navigation-link">Каталог</a>
+            <a href="#" class="site-navigation-link">Каталог</a>
           </li>
           <li class="site-navigation-item">
             <a href="#" class="site-navigation-link">Доставка и оплата</a>
@@ -19,25 +24,32 @@
             <a href="#" class="site-navigation-link">О Компании</a>
           </li>
         </ul>
-        <button class="button search-button">
-          <img src="./img/search.png" alt="Иконка поиска" />
-        </button>
+
         <ul class="personal-navigation">
           <li class="personal-navigation-item">
-            <a href="#" class="login">Вход</a>
+            <button class="personal-navigation-btn search-button"></button>
+            <!-- Форма поиска -->
+          </li>
+          <li class="personal-navigation-item">
+            <button class="personal-navigation-btn login-button">Вход</button>
+            <!-- Форма входа -->
+          </li>
+          <li class="personal-navigation-item">
+            <button class="personal-navigation-btn basket-button">Пусто</button>
+            <!-- Форма корзины -->
           </li>
         </ul>
-        <a class="basket-link" href="#">Пусто</a>
       </nav>
     </header>
 
-    <main class="wrapper">
+    <main>
+      <h1 class="visually-hidden">Глейси - магазин по продаже мороженого</h1>
       <!-- Необязательная часть -->
       <section class="features">
-        <h1>
+        <h2 class="features-title">
           Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
           собственного производства на развес
-        </h1>
+        </h2>
         <ul class="features-list">
           <li class="features-item features-item-icecream">
             Все наше мороженое изготавливается на собственном производстве, с
@@ -62,87 +74,70 @@
         </ul>
       </section>
 
-      <article class="new-in-blog">
-        <b>Новое в нашем блоге</b>
-        <h3 class="new-in-blog-header">
-          10 способов сервировки фруктовых щербетов к столу
-        </h3>
-      </article>
+      <div class="blocks-wrapper">
+        <article class="news">
+          <b>Новое в нашем блоге</b>
+          <a href="#">
+            <h2 class="news-caption">
+              10 способов сервировки фруктовых щербетов к столу
+            </h2>
+          </a>
+        </article>
 
-      <section class="subscription">
-        <h3 class="visually-hidden">Форма подписки</h3>
-        <p>
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-          самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-          всякой ненужной ерунды. Честно =)
-        </p>
-        <!-- <form action=""></form> -->
-      </section>
-
+        <div class="subscription">
+          <h2 class="visually-hidden">Форма подписки</h2>
+          <p>
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+            всякой ненужной ерунды. Честно =)
+          </p>
+          <!-- <form action=""></form> -->
+        </div>
+      </div>
       <!-- Необязательная часть -->
     </main>
 
     <footer class="main-footer">
-      <div class="social">
-        <h4 class="visually-hidden">Социальные сети</h4>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="social-button">
-              <img src="http://placehold.it/40x40" alt="Twitter" />
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-button">
-              <img src="http://placehold.it/40x40" alt="Instagram" />
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-button">
-              <img src="http://placehold.it/40x40" alt="Facebook" />
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-button">
-              <img src="http://placehold.it/40x40" alt="Вконтакте" />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="http://twitter.com/gllacy" class="social-link" aria-label="Мы в Twitter"></a>
+        </li>
+        <li class="social-item">
+          <a href="http://instagram.com/gllacy" class="social-link" aria-label="Мы в Instagram"></a>
+        </li>
+        <li class="social-item">
+          <a href="http://facebook.com/gllacy" class="social-link" aria-label="Мы в Facebook"></a>
+        </li>
+        <li class="social-item">
+          <a href="http://vk.com/gllacy" class="social-link" aria-label="Наш Вконтакте"></a>
+        </li>
+      </ul>
 
-      <div class="additional-links">
-        <ul class="additional-links-list">
-          <li class="additional-links-item">
-            <a href="#" class="additional-links-link">Для поставщиков</a>
-          </li>
-          <li class="additional-links-item">
-            <a href="#" class="additional-links-link">Наши документы</a>
-          </li>
-          <li class="additional-links-item">
-            <a href="#" class="additional-links-link">О производстве</a>
-          </li>
-          <li class="additional-links-item">
-            <a href="#" class="additional-links-link"
-              >Экологические стандарты</a
-            >
-          </li>
-        </ul>
-      </div>
+      <ul class="additional-links">
+        <li class="additional-links-item">
+          <a href="#" class="decorated">Для поставщиков</a>
+        </li>
+        <li class="additional-links-item">
+          <a href="#">Наши документы</a>
+        </li>
+        <li class="additional-links-item">
+          <a href="#">О производстве</a>
+        </li>
+        <li class="additional-links-item">
+          <a href="#">Экологические стандарты</a>
+        </li>
+      </ul>
 
-      <div class="developer">
-        <h4 class="visually-hidden">Разработчик сайта</h4>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img
-            src="http://placehold.it/120x45"
-            alt="Логотип HTML Academy"
-            class="footer-logo"
-          />
+      <p class="copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработчик сайта">
+          <img src="http://placehold.it/120x45" alt="Логотип HTML Academy" class="footer-logo" />
         </a>
-        <p>
-          Сделано в
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> ©
-          2019
-        </p>
-      </div>
+        Сделано в
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> ©
+        2019
+      </p>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
