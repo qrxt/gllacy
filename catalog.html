@@ -78,9 +78,21 @@
         <section class="personal-navigation-order">
           <h2 class="visually-hidden">Оформить заказ</h2>
           <form class="order-form" method="post" action="#">
-            <!--
-              
-            -->
+            <table class="order-form-products">
+              <caption class="visually-hidden">Товары в корзине</caption>
+              <tr class="product">
+                <td class="product-caption">Пломбир с апельсиновым джемом</td>
+                <td class="product-weight">1,5 кг х 200 руб.</td>
+                <td class="product-price">300 руб.</td>
+              </tr>
+              <tr class="product">
+                <td class="product-caption">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="product-weight">1,5 кг х 300 руб.</td>
+                <td class="product-price">450 руб.</td>
+              </tr>
+            </table>
+            <b class="order-form-total">Итого: <output class="order-form-total-value"></output></b>
+            <input type="submit" value="Оформить заказ">
           </form>
         </section>
       </div>
