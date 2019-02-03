@@ -16,14 +16,13 @@
         <ul class="site-navigation">
           <li class="site-navigation-item">
             <a href="catalog.html" class="site-navigation-link">Каталог</a>
-            <section class="site-navigation-submenu">
-              <h2 class="visully-hidden">Категории товаров</h2>
+            <div class="site-navigation-submenu">
               <ul class="submenu-list">
                 <li class="submenu-item new">
                   <a href="#" class="submenu-link">Новинки</a>
                 </li>
                 <li class="submenu-item">
-                  <a href="#" class="submenu-link">Сливочное</a>
+                  <a href="#" class="submenu-link active">Сливочное</a>
                 </li>
                 <li class="submenu-item">
                   <a href="#" class="submenu-link">Щербеты</a>
@@ -35,7 +34,7 @@
                   <a href="#" class="submenu-link">Мелорин</a>
                 </li>
               </ul>
-            </section>
+            </div>
           </li>
           <li class="site-navigation-item">
             <a href="#" class="site-navigation-link">Доставка и оплата</a>
@@ -47,19 +46,19 @@
 
         <div class="personal-navigation">
           <button class="personal-navigation-btn search-button" aria-label="Кнопка поиска"></button>
-          <section class="personal-navigation-search">
+          <div class="personal-navigation-search">
             <h2 class="visually-hidden">Поиск по сайту</h2>
-            <form class="search-form" method="get" action="catalog.html">
+            <form class="search-form" method="get" action="http://echo.htmlacademy.ru">
               <p class="input-wrapper">
                 <label class="visually-hidden" for="search-phrase">Поисковой запрос</label>
-                <input type="text" placeholder="Что ищем?" name="search-phrase" id="search-phrase">
+                <input type="search" placeholder="Что ищем?" name="search-phrase" id="search-phrase">
               </p>
             </form>
-          </section>
+          </div>
           <button class="personal-navigation-btn login-button">Вход</button>
           <section class="personal-navigation-login">
             <h2 class="visually-hidden">Авторизация</h2>
-            <form class="login-form" method="post" action="login.html">
+            <form class="login-form" method="post" action="http://echo.htmlacademy.ru">
               <p class="input-wrapper">
                 <label class="visually-hidden" for="auth-email">Адрес электронной почты</label>
                 <input type="email" placeholder="Электронная почта" name="auth-email" id="auth-email">
@@ -68,8 +67,8 @@
                 <label class="visually-hidden" for="auth-password">Пароль</label>
                 <input type="password" placeholder="Пароль" name="auth-password" id="auth-password">
               </p>
-              <button type="submit">Войти</button>
-              <div class="login-form-restoration">
+              <button class="login-form-btn btn" type="submit">Войти</button>
+              <div class="login-form-links">
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
               </div>
@@ -77,7 +76,6 @@
           </section>
 
           <button class="personal-navigation-btn basket-button">Пусто</button>
-          <!-- Форма корзины -->
         </div>
       </nav>
     </header>
@@ -130,7 +128,7 @@
             самого вкусного, что у нас происходит. Обещаем не спамить и не слать
             всякой ненужной ерунды. Честно =)
           </p>
-          <form class="subscription-form" method="post" action="#">
+          <form class="subscription-form" method="post" action="http://echo.htmlacademy.ru">
             <p class="input-wrapper">
               <label class="visually-hidden" for="subscription-email">Электронная почта</label>
               <input type="email" placeholder="Электронная почта" name="subscription-email" id="subscription-email">
@@ -141,7 +139,7 @@
       <section class="feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <b class="feedback-title">Мы обязательно вам ответим!</b>
-        <form class="feedback-form" method="post" action="#">
+        <form class="feedback-form" method="post" action="http://echo.htmlacademy.ru">
           <p class="input-wrapper">
             <label class="visually-hidden" for="feedback-name">Ваше имя</label>
             <input type="text" placeholder="Как вас зовут?" name="feedback-name" id="feedback-name">
@@ -151,7 +149,7 @@
             <input type="email" placeholder="Ваша почта для ответа?" name="feedback-email" id="feedback-email">
           </p>
           <textarea name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
-          <button type="submit">Отправить</button>
+          <button class="feedback-form-btn btn" type="submit">Отправить</button>
         </form>
       </section>
     </main>
