@@ -50,7 +50,7 @@
           <section class="personal-navigation-search">
             <h2 class="visually-hidden">Поиск по сайту</h2>
             <form class="search-form" method="get" action="catalog.html">
-              <p class="search-form-wrapper">
+              <p class="input-wrapper">
                 <label class="visually-hidden" for="search-phrase">Поисковой запрос</label>
                 <input type="text" placeholder="Что ищем?" name="search-phrase" id="search-phrase">
               </p>
@@ -60,15 +60,15 @@
           <section class="personal-navigation-login">
             <h2 class="visually-hidden">Авторизация</h2>
             <form class="login-form" method="post" action="login.html">
-              <p class="login-form-wrapper">
+              <p class="input-wrapper">
                 <label class="visually-hidden" for="auth-email">Адрес электронной почты</label>
-                <input type="text" placeholder="Электронная почта" name="auth-email" id="auth-email">
+                <input type="email" placeholder="Электронная почта" name="auth-email" id="auth-email">
               </p>
-              <p class="login-form-wrapper">
+              <p class="input-wrapper">
                 <label class="visually-hidden" for="auth-password">Пароль</label>
-                <input type="text" placeholder="Пароль" name="auth-password" id="auth-password">
+                <input type="password" placeholder="Пароль" name="auth-password" id="auth-password">
               </p>
-              <input type="submit" value="Войти">
+              <button type="submit">Войти</button>
               <div class="login-form-restoration">
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
@@ -132,31 +132,29 @@
             всякой ненужной ерунды. Честно =)
           </p>
           <form class="subscription-form" method="post" action="#">
-            <p class="subscription-form-wrapper">
+            <p class="input-wrapper">
               <label class="visually-hidden" for="subscription-email">Электронная почта</label>
-              <input type="text" placeholder="Электронная почта" name="subscription-email" id="subscription-email">
+              <input type="email" placeholder="Электронная почта" name="subscription-email" id="subscription-email">
             </p>
           </form>
         </div>
       </div>
-      <!-- Необязательная часть -->
       <section class="feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <b>Мы обязательно вам ответим!</b>
+        <b class="feedback-title">Мы обязательно вам ответим!</b>
         <form class="feedback-form" method="post" action="#">
-          <p class="feedback-form-wrapper">
+          <p class="input-wrapper">
             <label class="visually-hidden" for="feedback-name">Ваше имя</label>
             <input type="text" placeholder="Как вас зовут?" name="feedback-name" id="feedback-name">
           </p>
-          <p class="feedback-form-wrapper">
+          <p class="input-wrapper">
             <label class="visually-hidden" for="feedback-email">Адрес электронной почты</label>
-            <input type="text" placeholder="Ваша почта для ответа?" name="feedback-email" id="feedback-email">
+            <input type="email" placeholder="Ваша почта для ответа?" name="feedback-email" id="feedback-email">
           </p>
-          <textarea name="feedback-message" id="feedback-message" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-          <input type="submit" value="Отправить">
+          <textarea name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
+          <button type="submit">Отправить</button>
         </form>
       </section>
-      <!-- Необязательная часть -->
     </main>
 
     <footer class="main-footer">
