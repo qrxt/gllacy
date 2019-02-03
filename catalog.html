@@ -13,15 +13,14 @@
     </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li class="site-navigation-item">
+        <li class="site-navigation-item active">
           <a href="#" class="site-navigation-link">Каталог</a>
-          <section class="site-navigation-submenu">
-            <h2 class="visully-hidden">Категории товаров</h2>
+          <div class="site-navigation-submenu">
             <ul class="submenu-list">
               <li class="submenu-item new">
                 <a href="#" class="submenu-link">Новинки</a>
               </li>
-              <li class="submenu-item">
+              <li class="submenu-item active">
                 <a href="#" class="submenu-link">Сливочное</a>
               </li>
               <li class="submenu-item">
@@ -34,7 +33,7 @@
                 <a href="#" class="submenu-link">Мелорин</a>
               </li>
             </ul>
-          </section>
+          </div>
         </li>
         <li class="site-navigation-item">
           <a href="#" class="site-navigation-link">Доставка и оплата</a>
@@ -46,38 +45,38 @@
 
       <div class="personal-navigation">
         <button class="personal-navigation-btn search-button"></button>
-        <section class="personal-navigation-search">
+        <div class="personal-navigation-search">
           <h2 class="visually-hidden">Поиск по сайту</h2>
-          <form class="search-form" method="get" action="catalog.html">
-            <p class="search-form-wrapper">
+          <form class="search-form" method="get" action="http://echo.htmlacademy.ru">
+            <p class="input-wrapper">
               <label class="visually-hidden" for="search-phrase">Поисковой запрос</label>
-              <input type="text" placeholder="Что ищем?" name="search-phrase" id="search-phrase">
+              <input type="search" placeholder="Что ищем?" name="search-phrase" id="search-phrase">
             </p>
           </form>
-        </section>
+        </div>
         <button class="personal-navigation-btn login-button">Вход</button>
         <section class="personal-navigation-login">
           <h2 class="visually-hidden">Авторизация</h2>
-          <form class="login-form" method="post" action="login.html">
-            <p class="login-form-wrapper">
+          <form class="login-form" method="post" action="http://echo.htmlacademy.ru">
+            <p class="input-wrapper">
               <label class="visually-hidden" for="auth-email">Адрес электронной почты</label>
-              <input type="text" placeholder="Электронная почта" name="auth-email" id="auth-email">
+              <input type="email" placeholder="Электронная почта" name="auth-email" id="auth-email">
             </p>
-            <p class="login-form-wrapper">
+            <p class="input-wrapper">
               <label class="visually-hidden" for="auth-password">Пароль</label>
-              <input type="text" placeholder="Пароль" name="auth-password" id="auth-password">
+              <input type="password" placeholder="Пароль" name="auth-password" id="auth-password">
             </p>
-            <input type="submit" value="Войти">
-            <div class="login-form-restoration">
+            <button class="login-form-btn btn" type="submit">Войти</button>
+            <div class="login-form-links">
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </div>
           </form>
         </section>
-        <button class="personal-navigation-btn basket-button">2 товара</button>
+        <button class="personal-navigation-btn basket-button has-item">2 товара</button>
         <section class="personal-navigation-order">
           <h2 class="visually-hidden">Оформить заказ</h2>
-          <form class="order-form" method="post" action="#">
+          <form class="order-form" method="post" action="http://echo.htmlacademy.ru">
             <table class="order-form-products">
               <caption class="visually-hidden">Товары в корзине</caption>
               <tr class="product">
@@ -91,8 +90,8 @@
                 <td class="product-price">450 руб.</td>
               </tr>
             </table>
-            <b class="order-form-total">Итого: <output class="order-form-total-value"></output></b>
-            <input type="submit" value="Оформить заказ">
+            <b class="order-form-total">Итого: <span class="order-form-total-value"></span></b>
+            <button class="order-form-btn btn" type="submit">Оформить заказ</button>
           </form>
         </section>
       </div>
