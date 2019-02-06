@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+
+    background-color: #9db2a6;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.personal-navigation-search,
+.personal-navigation-login,
+.site-navigation-submenu {
+    display: none; /* временно скрыто */
+}
+
+.site-navigation,
+.site-navigation-submenu .submenu-list {
+    list-style: none;
+}
+
+.site-navigation-item {
+    padding: 10px 14px;
+    border-radius: 30px;
+}
+
+.site-navigation-item:hover {
+    background-color: #ffffff;
+}
+
+.site-navigation-item a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #ffffff;
+
+    border-bottom: 1px solid #AEBEB6;
+}
+
+.site-navigation-item:hover a {
+    color: #333333;
+    border: none;
+}
+
+.features {
+    color: #323232;
+
+    background-color: #F1E7D4;
+    background-image: url("../img/wafer-pattern.jpg");
+    background-repeat: repeat;
+}
+
+.features-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.features-item {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.news {
+    color: #323232;
+    background-color: #ffffff;
+    background-image: url("../img/strawberry.jpg");
+    background-repeat: no-repeat;
+}
+
+.news b {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.news-caption {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.news-caption a {
+    color: #323232;
+    border-bottom: 3px solid #323232; /* !!! */
+}
+
+.subscription {
+    background-color: #ffffff;
+}
+
+.subscription p {
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 22px;
+}
+
+.additional-links-item a {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 18px;
+
+    border-bottom: 1px solid #AEBEB6;
+}
+
+.additional-links-item .decorated {
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 18px;
+    color: #fefefe;
+}
+
+/*
+
+!!!
+
+цвет подчеркивания ссылок
+
+общее правило для ссылок
+
+*/
