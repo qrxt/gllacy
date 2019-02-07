@@ -1,13 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
-
-    background-color: #9db2a6;
+    background-color: #96aca0;
 }
 
 .visually-hidden {
@@ -19,7 +17,32 @@ body {
   }
 
 a {
+    color: #ffffff;
+
+    border-bottom: 1px solid #a9bbb1;
+
     text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid #a7a294;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #ea5239; /* позже будет градиент */
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #f17d65;
 }
 
 .main-navigation {
@@ -29,6 +52,7 @@ a {
 
 .personal-navigation-search,
 .personal-navigation-login,
+.personal-navigation-order,
 .site-navigation-submenu {
     display: none; /* временно скрыто */
 }
@@ -38,32 +62,28 @@ a {
     list-style: none;
 }
 
-.site-navigation-item {
-    padding: 10px 14px;
-    border-radius: 30px;
-}
-
-.site-navigation-item:hover {
-    background-color: #ffffff;
-}
-
 .site-navigation-item a {
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
     color: #ffffff;
-
-    border-bottom: 1px solid #AEBEB6;
+    border-bottom: 1px solid #adbdb4;
 }
 
-.site-navigation-item:hover a {
+.site-navigation-item.active a {
+    background-color: #d07058;
+    color: #ffffff;
+}
+
+.site-navigation-item a:hover,
+.site-navigation-item a:focus {
+    background-color: #ffffff;
     color: #333333;
     border: none;
 }
 
 .features {
     color: #323232;
-
     background-color: #F1E7D4;
     background-image: url("../img/wafer-pattern.jpg");
     background-repeat: repeat;
@@ -101,7 +121,14 @@ a {
 
 .news-caption a {
     color: #323232;
-    border-bottom: 3px solid #323232; /* !!! */
+    border-bottom: 2px solid #353535;
+}
+
+.news-caption a:hover,
+.news-caption a:focus,
+.news-caption a:active {
+    color: #e84d37;
+    border-bottom: 2px solid #f9cdc4;
 }
 
 .subscription {
@@ -114,12 +141,46 @@ a {
     font-weight: 22px;
 }
 
-.additional-links-item a {
+.breadcrumbs {
+    list-style: none;
+}
+
+.page-title {
     color: #ffffff;
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+}
+
+.products-item {
+    list-style: none;
+}
+
+.products-item-link {
+    border: none;
+}
+
+.products-item-link img {
+    border-radius: 50%;
+}
+
+.products-item-price {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.products-item-price span {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.additional-links-item a {
     font-size: 13px;
     line-height: 18px;
-
-    border-bottom: 1px solid #AEBEB6;
 }
 
 .additional-links-item .decorated {
@@ -127,17 +188,7 @@ a {
 }
 
 .copyright {
+    color: #fefefe;
     font-size: 12px;
     line-height: 18px;
-    color: #fefefe;
 }
-
-/*
-
-!!!
-
-цвет подчеркивания ссылок
-
-общее правило для ссылок
-
-*/
