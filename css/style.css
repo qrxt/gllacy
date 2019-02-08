@@ -167,7 +167,7 @@ a {
     border-radius: 50%;
 }
 
-.products-item-price {
+.products-item-price { 
     color: #ffffff;
     font-size: 45px;
     line-height: 45px;
@@ -180,7 +180,6 @@ a {
     line-height: 45px;
     font-weight: 700;
 }
-
 .additional-links {
     list-style: none;
 }
