@@ -109,6 +109,61 @@
       <li class="breadcrumbs-current">Сливочное</li>
     </ul>
     <h1 class="page-title">Сливочное мороженое</h1>
+    <form class="filter-form" method="get" action="http://echo.htmlacademy.ru">
+      <fieldset class="filter-form-item">
+        <legend>Сортировка:</legend>
+        <select name="products-sort" id="products-sort">
+          <option value="popular-first" selected>По популярности</option>
+        </select>
+      </fieldset>
+      <fieldset class="filter-form-item">
+        <legend>Цена: 100 руб. - 500 руб.</legend>
+        <input type="range" name="price-range">
+      </fieldset>
+      <fieldset class="filter-form-item">
+        <legend>Жирность:</legend>
+        <p class="input-wrapper">
+          <label>0%</label>
+          <input type="radio" value="zero" name="fattiness" id="zero">
+        </p>
+        <p class="input-wrapper">
+          <label>до 10%</label>
+          <input type="radio" value="less-than-10%" name="fattiness" id="less-than-ten" checked>
+        </p>
+        <p class="input-wrapper">
+          <label>до 30%</label>
+          <input type="radio" value="less-than-30%" name="fattiness" id="less-than-thirty">
+        </p>
+        <p class="input-wrapper">
+          <label>выше 30%</label>
+          <input type="radio" value="more-than-30%" name="fattiness" id="more-than-thirty">
+        </p>
+      </fieldset>
+      <fieldset class="filter-form-item">
+        <legend>Наполнители:</legend>
+        <p class="input-wrapper">
+          <label>Шоколадные</label>
+          <input type="checkbox" name="filler" id="chocolate">
+        </p>
+        <p class="input-wrapper">
+          <label>Сахарные присыпки</label>
+          <input type="checkbox" name="filler" id="sugar">
+        </p>
+        <p class="input-wrapper">
+          <label>Фрукты</label>
+          <input type="checkbox" name="filler" id="fruits">
+        </p>
+        <p class="input-wrapper">
+          <label>Сиропы</label>
+          <input type="checkbox" name="filler" id="syrup">
+        </p>
+        <p class="input-wrapper">
+          <label>Джемы</label>
+          <input type="checkbox" name="filler" id="jam">
+        </p>
+      </fieldset>
+      <button class="filter-form-btn btn" type="submit">Применить</button>
+    </form>
     <section class="products">
       <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
       <ul class="products-list">
