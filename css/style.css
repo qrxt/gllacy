@@ -38,9 +38,37 @@ a {
     background-color: #f17d65;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1146px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 9px;
+}
+
 .main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
     font-size: 16px;
     line-height: 18px;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
 }
 
 .personal-navigation > :not(.personal-navigation-btn),
@@ -71,6 +99,47 @@ a {
     background-color: #ffffff;
     color: #333333;
     border: none;
+}
+
+.special-offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.offer {
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+
+    width: 560px;
+    height: 229px;
+}
+
+.offer.raspberry {
+    background-color: #701e28;
+    background-image: url("../img/raspberry.jpg");
+}
+
+.offer.chocolate {
+    background-color: #603720;
+    background-image: url("../img/chocolate.jpg");
+}
+
+.offer-caption {
+    margin: 0;
+    padding: 0;
+    
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+}
+
+.offer-description {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
 }
 
 .features {
