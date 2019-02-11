@@ -105,9 +105,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin-top: 40px;
 }
 
 .offer {
+    object-fit: contain;
     background-repeat: no-repeat;
     border-radius: 15px;
     padding-top: 15px;
@@ -137,16 +140,34 @@ a {
 }
 
 .offer-description {
+    margin: 0;
+    padding: 0;
+    
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
+
+    width: 520px;
+    margin-top: 15px;
+}
+
+.special-offers-btn {
+    margin-left: auto;
+    margin-top: 45px;
 }
 
 .features {
+    margin: 0;
+    padding: 0;
+
     color: #323232;
     background-color: #F1E7D4;
     background-image: url("../img/wafer-pattern.jpg");
     background-repeat: repeat;
+
+    border-radius: 15px;
+    padding-top: 29px;
+    padding-left: 21px;
 }
 
 .features-title {
@@ -224,7 +245,26 @@ a {
     font-weight: 700;
 }
 
+.products-list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 40px;
+}
+
 .products-item {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 267px;
+
     list-style: none;
 }
 
@@ -249,6 +289,25 @@ a {
     line-height: 45px;
     font-weight: 700;
 }
+
+.products-item-description {
+    color: #ffffff;
+    /* многострочное подчеркивание */
+}
+
+.products-item-header {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+
+    text-align: center;
+    
+    margin-top: 12px;
+}
+
 .additional-links {
     list-style: none;
 }
