@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .btn {
     color: #ffffff;
     background-color: #ea5239; /* позже будет градиент */
