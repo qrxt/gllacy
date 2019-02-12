@@ -425,6 +425,12 @@ a {
     margin-top: 9px;
 }
 
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 .main-footer {
     display: flex;
     flex-direction: row;
