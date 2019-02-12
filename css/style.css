@@ -72,7 +72,8 @@ a {
 }
 
 .personal-navigation > :not(.personal-navigation-btn),
-.site-navigation-submenu {
+.site-navigation-submenu,
+.feedback {
     display: none; /* временно скрыто */
 }
 
@@ -99,6 +100,15 @@ a {
     background-color: #ffffff;
     color: #333333;
     border: none;
+}
+
+.filter-form {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .special-offers {
@@ -166,26 +176,70 @@ a {
     background-repeat: repeat;
 
     border-radius: 15px;
-    padding-top: 29px;
+    padding-top: 28px;
     padding-left: 21px;
+    padding-bottom: 30px;
 }
 
 .features-title {
+    margin: 0;
+    padding: 0;
+
     font-size: 24px;
     font-weight: 500;
     line-height: 30px;
+    color: #323232;
+    text-align: left;
+}
+
+.features-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 35px;
 }
 
 .features-item {
+    width: 476px;
+
     font-size: 16px;
     line-height: 22px;
+    color: #323232;
+}
+
+.blocks-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 40px;
 }
 
 .news {
+    object-fit: contain;
+
     color: #323232;
     background-color: #ffffff;
     background-image: url("../img/strawberry.jpg");
     background-repeat: no-repeat;
+    background-position: -50px -220px;
+
+    padding-left: 20px;
+    padding-top: 20px;
+
+    border-radius: 15px;
+    width: 560px;
+
+    min-height: 220px; /* временно */
 }
 
 .news-description {
@@ -198,6 +252,8 @@ a {
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+
+    width: 279px;
 }
 
 .news-caption a {
@@ -213,21 +269,67 @@ a {
 }
 
 .subscription {
+    margin: 0;
+    padding: 0;
+
     background-color: #ffffff;
+
+    border-radius: 15px;
+    width: 560px;
+
+    padding-top: 38px;
+    padding-left: 27px;
+    min-height: 220px; /* временно */
 }
 
 .subscription p {
+    margin: 0;
+    padding: 0;
+
     color: #5a5a5a;
     font-size: 16px;
     font-weight: 22px;
+
+    width: 506px;
 }
 
 .breadcrumbs {
+    /* выровнять текст по высоте */
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs li {
+    position: relative;
+}
+
+.breadcrumbs li::after {
+    content: "»";
+}
+
+.breadcrumbs li:last-child::after {
+    display: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+    font-size: 14px;
+    line-height: 16px;
     color: #ffffff;
+}
+
+.breadcrumbs a {
     border-bottom: 1px solid #a9bbb1;
 }
 
@@ -251,7 +353,7 @@ a {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
     margin-top: 40px;
 }
@@ -260,12 +362,21 @@ a {
     margin: 0;
     padding: 0;
 
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 267px;
 
+    margin-right: 26px;
+    margin-bottom: 35px;
+
     list-style: none;
+}
+
+.products-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .products-item-link {
@@ -281,6 +392,10 @@ a {
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
+
+    position: absolute;
+    top: 210px;
+    left: 0;
 }
 
 .products-item-price span {
@@ -291,6 +406,8 @@ a {
 }
 
 .products-item-description {
+    width: 247px;
+    
     color: #ffffff;
     /* многострочное подчеркивание */
 }
@@ -305,11 +422,46 @@ a {
 
     text-align: center;
     
-    margin-top: 12px;
+    margin-top: 9px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 28px;
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .additional-links {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 304px;
+
     list-style: none;
+}
+
+.additional-links-item {
+    margin: 0;
+    padding: 0;
 }
 
 .additional-links-item a {
