@@ -43,22 +43,19 @@ img {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
-    width: 1146px;
+    padding: 0 27px;
+    width: 1200px;
 }
 
 .main-header {
     display: flex;
-    flex-direction: row;
 
     margin-top: 9px;
 }
 
 .main-navigation {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -72,7 +69,6 @@ img {
     padding: 0;
 
     display: flex;
-    flex-direction: row;
 }
 
 .personal-navigation > :not(.personal-navigation-btn),
@@ -111,42 +107,39 @@ img {
     padding: 0;
 
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .special-offers {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 
     margin-top: 40px;
 }
 
 .offer {
-    object-fit: contain;
-    background-repeat: no-repeat;
     border-radius: 15px;
+
     padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 23px;
     padding-left: 20px;
 
     width: 560px;
-    height: 229px;
 }
 
-.offer.raspberry {
+.offer-raspberry {
     background-color: #701e28;
     background-image: url("../img/raspberry.jpg");
 }
 
-.offer.chocolate {
+.offer-chocolate {
     background-color: #603720;
     background-image: url("../img/chocolate.jpg");
 }
 
 .offer-caption {
     margin: 0;
-    padding: 0;
     
     font-size: 35px;
     line-height: 41px;
@@ -161,7 +154,6 @@ img {
     line-height: 22px;
     font-weight: 700;
 
-    width: 520px;
     margin-top: 15px;
 }
 
@@ -171,11 +163,8 @@ img {
 }
 
 .features {
-    margin: 0;
-    padding: 0;
-
     color: #323232;
-    background-color: #F1E7D4;
+    background-color: #f1e7d4;
     background-image: url("../img/wafer-pattern.jpg");
     background-repeat: repeat;
 
@@ -203,10 +192,8 @@ img {
     list-style: none;
 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-content: space-between;
     flex-wrap: wrap;
 
     margin-top: 35px;
@@ -222,15 +209,12 @@ img {
 
 .blocks-wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 
     margin-top: 40px;
 }
 
 .news {
-    object-fit: contain;
-
     color: #323232;
     background-color: #ffffff;
     background-image: url("../img/strawberry.jpg");
@@ -287,14 +271,9 @@ img {
 }
 
 .subscription p {
-    margin: 0;
-    padding: 0;
-
     color: #5a5a5a;
     font-size: 16px;
-    font-weight: 22px;
-
-    width: 506px;
+    line-height: 22px;
 }
 
 .breadcrumbs {
@@ -304,12 +283,8 @@ img {
     padding: 0;
 
     display: flex;
-    flex-direction: row;
     align-content: center;
     align-items: center;
-
-    margin: 0;
-    padding: 0;
 
     list-style: none;
 }
@@ -356,16 +331,12 @@ img {
     padding: 0;
 
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 
     margin-top: 40px;
 }
 
 .products-item {
-    margin: 0;
-    padding: 0;
-
     position: relative;
 
     display: flex;
@@ -410,8 +381,6 @@ img {
 }
 
 .products-item-description {
-    width: 247px;
-    
     color: #ffffff;
     /* многострочное подчеркивание */
 }
@@ -431,19 +400,13 @@ img {
 
 .pagination {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
 }
 
 .main-footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    padding-left: 28px;
-    padding-top: 18px;
-    padding-bottom: 30px;
 }
 
 .social-list {
@@ -451,7 +414,6 @@ img {
     padding: 0;
 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -460,7 +422,6 @@ img {
     padding: 0;
 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 
