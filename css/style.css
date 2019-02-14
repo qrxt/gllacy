@@ -118,6 +118,9 @@ img {
 }
 
 .offer {
+    display: flex;
+    flex-wrap: wrap;
+
     border-radius: 15px;
 
     padding-top: 15px;
@@ -170,6 +173,7 @@ img {
 
     border-radius: 15px;
     padding-top: 28px;
+    padding-right: 35px;
     padding-left: 21px;
     padding-bottom: 30px;
 }
@@ -257,9 +261,6 @@ img {
 }
 
 .subscription {
-    margin: 0;
-    padding: 0;
-
     background-color: #ffffff;
 
     border-radius: 15px;
@@ -289,10 +290,6 @@ img {
     list-style: none;
 }
 
-.breadcrumbs li {
-    position: relative;
-}
-
 .breadcrumbs li::after {
     content: "»";
 }
@@ -309,7 +306,7 @@ img {
 }
 
 .breadcrumbs a {
-    border-bottom: 1px solid #a9bbb1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumbs a:hover,
