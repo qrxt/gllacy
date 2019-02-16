@@ -56,6 +56,13 @@ img {
     display: flex;
 
     padding-top: 9px;
+
+    margin-bottom: 18px;
+}
+
+.logo,
+.logo-image {
+    margin-right: 24px;
 }
 
 .main-navigation {
@@ -86,21 +93,25 @@ img {
     list-style: none;
 }
 
-.site-navigation-item a {
+.site-navigation-item:not(:last-child) {
+    margin-right: 27px;
+}
+
+.site-navigation-link {
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
     color: #ffffff;
-    border-bottom: 1px solid #adbdb4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.site-navigation-item.active a {
+.site-navigation-link.active {
     background-color: #d07058;
     color: #ffffff;
 }
 
-.site-navigation-item a:hover,
-.site-navigation-item a:focus {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
     background-color: #ffffff;
     color: #333333;
     border: none;
@@ -260,6 +271,8 @@ img {
 .blocks-wrapper {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 30px;
 }
 
 .news {
@@ -303,7 +316,7 @@ img {
 .news-caption a:focus,
 .news-caption a:active {
     color: #e84d37;
-    border-bottom: 2px solid #f9cdc4;
+    border-bottom: 2px solid rgba(255, 188, 158, 0.3);
 }
 
 .subscription {
@@ -344,18 +357,20 @@ img {
     padding: 0;
 
     display: flex;
-    align-content: center;
     align-items: center;
 
     list-style: none;
 }
 
-.breadcrumbs li::after {
-    content: "»";
+.breadcrumbs li {
+    vertical-align: middle;
 }
 
-.breadcrumbs li:last-child::after {
-    display: none;
+.breadcrumbs li:not(:last-child)::after {
+    content: "»";
+
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 .breadcrumbs a,
@@ -366,14 +381,14 @@ img {
 }
 
 .breadcrumbs a {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus,
 .breadcrumbs a:active {
     color: #ffbc9e;
-    border-bottom: 1px solid #a7a294;   
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);   
 }
 
 .page-title {
@@ -403,18 +418,25 @@ img {
     align-items: center;
     width: 267px;
 
-    margin-right: 26px;
     margin-bottom: 20px;
 
     list-style: none;
 }
 
-.products-item:nth-child(4n) {
-    margin-right: 0;
+.products > .products-list > .products-item {
+    margin-bottom: 40px;
 }
 
-.products-item-link {
-    border: none;
+.products-item:not(:nth-child(4n)) {
+    margin-right: 26px;
+}
+
+.products-item-header span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.products-item-header span:hover {
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .products-item-link img {
@@ -443,7 +465,8 @@ img {
     color: #ffffff;
 
     padding-top: 7px;
-    /* многострочное подчеркивание */
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .products-item-header {
@@ -471,9 +494,33 @@ img {
     margin: 0;
     padding: 0;
 
+    list-style: none;
+    position: relative;
+
     display: flex;
     justify-content: space-between;
 }
+
+/*
+.social-link::before {
+    content: "";
+
+    width: 32px;
+    height: 32px;
+
+    position: absolute;
+
+    top: -10px;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.social-link-twitter::before {
+    background-image: url("../img/twitter.svg");
+}
+*/
 
 .additional-links {
     margin: 0;
@@ -495,7 +542,7 @@ img {
 
 .additional-links-item a {
     color: #ffffff;
-    border-bottom: 1px solid #a9bbb1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 13px;
     line-height: 18px;
 }
@@ -504,7 +551,7 @@ img {
 .additional-links-item a:focus,
 .additional-links-item a:active {
     color: #ffbc9e;
-    border-bottom: 1px solid #a7a294;
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .additional-links-item .decorated {
@@ -519,12 +566,12 @@ img {
 
 .copyright-link {
     color: #ffffff;
-    border-bottom: 1px solid #a9bbb1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 12px;
     line-height: 18px;
 }
 
 .copyright-link:hover {
     color: #ffbc9e;
-    border-bottom: 1px solid #a7a294;
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
