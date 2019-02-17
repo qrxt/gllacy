@@ -62,7 +62,7 @@ img {
 
 .logo,
 .logo-image {
-    margin-right: 24px;
+    margin-right: 11px;
 }
 
 .main-navigation {
@@ -88,13 +88,122 @@ img {
     display: none; /* временно скрыто */
 }
 
+.personal-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.personal-navigation-btn {
+    border: none;
+    border-radius: 15px;
+
+    vertical-align: middle;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    min-height: 32px;
+}
+
+.personal-navigation-btn:not(.basket-button):hover,
+.personal-navigation-btn:not(.basket-button):focus,
+.personal-navigation-btn:not(.basket-button):active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.personal-navigation-btn:not(:last-child) {
+    margin-right: 9px;
+    /* почему-то маржин все равно есть у последнего элемента в каталоге лол что */
+}
+
+.search-button {
+    width: 33px;
+    height: 33px;
+
+    background-image: url("../img/loupe.svg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center center;
+}
+
+.search-button:hover,
+.search-button:focus,
+.search-button:active {
+    background-image: url("../img/loupe-black.svg");
+}
+
+.login-button {
+    position: relative;
+    padding-left: 45px;
+    padding-right: 17px;
+}
+
+.login-button::before,
+.basket-button::before {
+    content: "";
+    position: absolute;
+
+    width: 21px;
+    height: 19px;
+
+    top: 6px;
+    left: 18px;
+
+    background-repeat: no-repeat;
+}
+
+.search-button::before {
+    top: 8px;
+}
+
+.login-button::before {
+    background-image: url("../img/entrance-white.svg");
+}
+
+.login-button:hover::before,
+.login-button:focus::before,
+.login-button:active::before {
+    background-image: url("../img/entrance-black.svg");
+}
+
+.basket-button {
+    position: relative;
+    padding-left: 45px;
+    padding-right: 18px;
+}
+
+.basket-button::before {
+    background-image: url("../img/basket.svg");
+}
+
+.has-item {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.has-item::before {
+    background-image: url("../img/basket-red.svg");
+}
+
 .site-navigation,
 .site-navigation-submenu {
     list-style: none;
 }
 
+.site-navigation-item {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 15px;
+}
+
 .site-navigation-item:not(:last-child) {
-    margin-right: 27px;
+    margin-right: 5px;
 }
 
 .site-navigation-link {
@@ -110,12 +219,23 @@ img {
     color: #ffffff;
 }
 
-.site-navigation-link:hover,
-.site-navigation-link:focus {
-    background-color: #ffffff;
+.site-navigation-link:hover {
     color: #333333;
     border: none;
 }
+
+/* */
+
+.site-navigation-item:hover,
+.site-navigation-link:hover {
+    background-color: #ffffff;
+}
+
+.site-navigation-item:hover > .site-navigation-link {
+    color: #333333;
+}
+
+/* */
 
 .filter-form {
     margin: 0;
@@ -198,8 +318,6 @@ img {
     margin-bottom: 40px;
 }
 
-/* */
-
 .features-title {
     margin: 0;
     padding: 0;
@@ -235,8 +353,6 @@ img {
     padding-left: 56px;
     margin-bottom: 22px;
 }
-
-/* */
 
 .features-item::before {
     content: "";
