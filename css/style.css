@@ -5,11 +5,18 @@ html { box-sizing: border-box; }
 body {
     margin: 0;
     padding: 0;
+}
+
+.site-wrapper {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
-    background-color: #96aca0;
+
+    background-color: #849d8f;
+    background-image: url("../img/first-slide.png");
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .visually-hidden {
@@ -100,7 +107,7 @@ img {
 
 .personal-navigation-btn {
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
 
     vertical-align: middle;
 
@@ -122,7 +129,7 @@ img {
 }
 
 .personal-navigation-btn:not(:last-child) {
-    margin-right: 9px;
+    margin-right: 10px;
     /* почему-то маржин все равно есть у последнего элемента в каталоге лол что */
 }
 
@@ -133,7 +140,7 @@ img {
     background-image: url("../img/loupe.svg");
     background-repeat: no-repeat;
     border-radius: 50%;
-    background-position: center center;
+    background-position: 8px 7px;
 }
 
 .search-button:hover,
@@ -144,8 +151,8 @@ img {
 
 .login-button {
     position: relative;
-    padding-left: 45px;
-    padding-right: 17px;
+    padding-left: 43px;
+    padding-right: 19px;
 }
 
 .login-button::before,
@@ -156,14 +163,10 @@ img {
     width: 21px;
     height: 19px;
 
-    top: 6px;
-    left: 18px;
+    top: 5px;
+    left: 15px;
 
     background-repeat: no-repeat;
-}
-
-.search-button::before {
-    top: 8px;
 }
 
 .login-button::before {
@@ -178,7 +181,7 @@ img {
 
 .basket-button {
     position: relative;
-    padding-left: 45px;
+    padding-left: 42px;
     padding-right: 18px;
 }
 
@@ -230,6 +233,16 @@ img {
     border: none;
 }
 
+/* */
+.site-navigation-link:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 15px;
+}
+/* */
+
 .site-navigation-item:hover,
 .site-navigation-link:hover {
     background-color: #ffffff;
@@ -245,6 +258,30 @@ img {
 
     display: flex;
     flex-wrap: wrap;
+}
+
+.products-slider {
+    position: relative;
+
+    padding-top: 321px;
+    text-align: center;
+}
+
+.products-slider-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.slide-title {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
 }
 
 .special-offers {
@@ -314,7 +351,7 @@ img {
     border-radius: 15px;
     padding-top: 25px;
     padding-right: 27px;
-    padding-bottom: 4px;
+    padding-bottom: 13px;
     padding-left: 20px;
     
     margin-bottom: 40px;
@@ -330,7 +367,7 @@ img {
     color: #323232;
     text-align: left;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .features-list {
@@ -352,37 +389,32 @@ img {
     line-height: 22px;
     color: #323232;
 
+    background-repeat: no-repeat;
+    background-size: 49px 49px;
+    background-position: top left;
+
     padding-left: 56px;
-    margin-bottom: 22px;
+    padding-top: 12px;
+    margin-bottom: 10px
 }
 
-.features-item::before {
-    content: "";
-
-    position: absolute;
-    top: -12px;
-    left: 0;
-
-    width: 49px;
-    height: 49px;
+.features-item:nth-child(2n) {
+    padding-left: 59px;
 }
 
-.features-item-icecream::before {
+.features-item-icecream {
     background-image: url("../img/ice-cream.svg");
 }
 
-.features-item-cow::before {
-    background-repeat: no-repeat;
+.features-item-cow {
     background-image: url("../img/cow.svg");
 }
 
-.features-item-eco::before {
-    background-repeat: no-repeat;
+.features-item-eco {
     background-image: url("../img/eco.svg");
 }
 
-.features-item-thermal::before {
-    background-repeat: no-repeat;
+.features-item-thermometer {
     background-image: url("../img/thermometer.svg");
 }
 
@@ -543,6 +575,19 @@ img {
     list-style: none;
 }
 
+.product-examples .products-item::before {
+    content: "";
+
+    width: 61px;
+    height: 61px;
+
+    background-image: url("../img/hit.svg");
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .products > .products-list > .products-item {
     margin-bottom: 40px;
 }
@@ -571,7 +616,9 @@ img {
 
     position: absolute;
     top: 210px;
-    left: 0;
+    left: 0px;
+
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
 .products-item-price span {
@@ -619,8 +666,12 @@ img {
     position: relative;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+}
+
+.social-item:nth-child(2n+1) {
+    margin-right: 10px;
 }
 
 /*
