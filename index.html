@@ -10,6 +10,9 @@
 </head>
 
 <body>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle-slide" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle-slide">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle-slide">
   <div class="site-wrapper">
     <div class="container">
       <header class="main-header">
@@ -86,24 +89,24 @@
           <h2 class="visually-hidden">Слайдер товаров</h2>
           <div class="products-slider-controls">
             <label for="product-1">Первый</label>
-            <label for="product-1">Второй</label>
-            <label for="product-1">Третий</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
           </div>
           <ul class="products-slider-list">
-            <li class="products-slider-item slide">
-              <h3 class="slide-title" id="first-slide">
+            <li class="products-slider-item slide" id="slide-1">
+              <h3 class="slide-title">
                 Крем-брюле и пломбир с малиновым джемом
               </h3>
               <a class="btn" href="#">Давайте оба!</a>
             </li>
-            <li class="products-slider-item slide">
-              <h3 class="slide-title" id="second-slide">
+            <li class="products-slider-item slide" id="slide-2">
+              <h3 class="slide-title">
                 Шоколадный пломбир и лимонный сорбет
               </h3>
               <a class="btn" href="#">Давайте оба!</a>
             </li>
-            <li class="products-slider-item slide">
-              <h3 class="slide-title" id="third-slide">
+            <li class="products-slider-item slide" id="slide-3">
+              <h3 class="slide-title">
                 Пломбир с помадкой и клубничный щербет
               </h3>
               <a class="btn" href="#">Давайте оба!</a>
@@ -167,8 +170,7 @@
 
             <li class="products-item">
               <a href="#" class="products-item-link">
-                <img src="img/product-4-0.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267"
-                  height="267" />
+                <img src="img/product-4-0.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267" />
               </a>
               <b class="products-item-price">415₽<span>/кг</span></b>
               <a class="products-item-description" href="#">
