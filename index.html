@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="main-page">
   <input class="visually-hidden" type="radio" id="product-1" name="toggle-slide" checked>
   <input class="visually-hidden" type="radio" id="product-2" name="toggle-slide">
   <input class="visually-hidden" type="radio" id="product-3" name="toggle-slide">
@@ -97,19 +97,19 @@
               <h3 class="slide-title">
                 Крем-брюле и пломбир с малиновым джемом
               </h3>
-              <a class="btn" href="#">Давайте оба!</a>
+              <a class="btn products-slider-btn" href="#">Давайте оба!</a>
             </li>
             <li class="products-slider-item slide" id="slide-2">
               <h3 class="slide-title">
                 Шоколадный пломбир и лимонный сорбет
               </h3>
-              <a class="btn" href="#">Давайте оба!</a>
+              <a class="btn products-slider-btn" href="#">Давайте оба!</a>
             </li>
             <li class="products-slider-item slide" id="slide-3">
               <h3 class="slide-title">
                 Пломбир с помадкой и клубничный щербет
               </h3>
-              <a class="btn" href="#">Давайте оба!</a>
+              <a class="btn products-slider-btn" href="#">Давайте оба!</a>
             </li>
           </ul>
         </section>
@@ -170,7 +170,8 @@
 
             <li class="products-item">
               <a href="#" class="products-item-link">
-                <img src="img/product-4-0.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267" />
+                <img src="img/product-4-0.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267"
+                  height="267" />
               </a>
               <b class="products-item-price">415₽<span>/кг</span></b>
               <a class="products-item-description" href="#">
@@ -215,19 +216,21 @@
           </article>
 
           <div class="subscription">
-            <h2 class="visually-hidden">Форма подписки</h2>
-            <p>
-              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-              самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-              всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="subscription-form" method="post" action="http://echo.htmlacademy.ru">
-              <p class="input-wrapper">
-                <label class="visually-hidden" for="subscription-email">Электронная почта</label>
-                <input type="email" placeholder="Электронная почта" name="subscription-email" id="subscription-email">
+            <div class="subscription-content">
+              <h2 class="visually-hidden">Форма подписки</h2>
+              <p class="subscription-text">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+                самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+                всякой ненужной ерунды. Честно =)
               </p>
-              <button class="subscription-form-btn btn" type="submit">Отправить</button>
-            </form>
+              <form class="subscription-form" method="post" action="http://echo.htmlacademy.ru">
+                <p class="input-wrapper">
+                  <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+                  <input type="email" placeholder="Электронная почта" name="subscription-email" id="subscription-email">
+                </p>
+                <button class="subscription-form-btn btn" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
 

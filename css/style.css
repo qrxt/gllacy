@@ -7,6 +7,14 @@ body {
     padding: 0;
 }
 
+.main-page > .site-wrapper {
+    background-image: url("../img/first-slide.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
 .site-wrapper {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
@@ -14,11 +22,6 @@ body {
     color: #ffffff;
 
     background-color: #849d8f;
-    background-image: url("../img/first-slide.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
@@ -65,8 +68,8 @@ img {
     padding-right: 25px;
     padding-bottom: 11px;
     padding-left: 25px;
-    border-radius: 50px;
     
+    border-radius: 50px;
 
     background-color: #f26843;
     background-image: linear-gradient(to top, #e74a35, #f26843);
@@ -250,6 +253,7 @@ img {
     font-weight: 700;
     line-height: 18px;
     color: #ffffff;
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -262,16 +266,6 @@ img {
     color: #333333;
     border: none;
 }
-
-/* */
-.site-navigation-link:hover {
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    border-radius: 15px;
-}
-/* */
 
 .site-navigation-item:hover,
 .site-navigation-link:hover {
@@ -288,18 +282,36 @@ img {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .products-slider {
     position: relative;
 
-    padding-top: 321px;
+    padding-top: 301px;
     text-align: center;
+}
+
+.products-slider-btn {
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    
+    text-decoration: none;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+
+    padding-top: 11px;
+    padding-right: 43px;
+    padding-bottom: 11px;
+    padding-left: 41px;
+
+    margin-bottom: 41px;
 }
 
 .products-slider-controls {
     position: absolute;
-    bottom: 63px;
+    bottom: 62px;
     left: 0;
     z-index: 20;
     font-size: 0;
@@ -332,7 +344,7 @@ img {
 
 #product-3:checked ~ .site-wrapper {
     background-color: #9d8b84;
-    background-image: url("../img/second-slide.png");
+    background-image: url("../img/third-slide.png");
 }
 
 #product-1:checked ~ .site-wrapper #slide-1,
@@ -361,7 +373,7 @@ img {
 .slide-title {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 
     font-size: 60px;
     line-height: 60px;
@@ -394,11 +406,15 @@ img {
 .offer-raspberry {
     background-color: #701e28;
     background-image: url("../img/raspberry.jpg");
+    background-position-x: -50px;
+    background-position-y: -95px;
 }
 
 .offer-chocolate {
     background-color: #603720;
     background-image: url("../img/chocolate.jpg");
+    background-position-x: -218px;
+    background-position-y: -105px;
 }
 
 .offer-caption {
@@ -469,7 +485,7 @@ img {
     color: #323232;
     text-align: left;
 
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .features-list {
@@ -574,24 +590,37 @@ img {
 
 .subscription {
     background-color: #ffffff;
+    background-image: url("../img/bg-post.svg");
 
     border-radius: 15px;
+
     width: 560px;
 
-    padding-top: 32px;
-    padding-right: 27px;
-    padding-left: 27px;
+    padding-top: 5px;
+    padding-right: 6px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+}
+
+.subscription-content {
+    background-color: #f8f7f4;
+
+    border-radius: 10px;
+
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 21px;
     padding-bottom: 36px;
 }
 
-.subscription p {
+.subscription-text {
     margin: 0;
 
     color: #5a5a5a;
     font-size: 16px;
     line-height: 22px;
 
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 }
 
 .subscription-form {
@@ -600,7 +629,18 @@ img {
     justify-content: space-between;
 }
 
-.subscripton-form-btn {
+.subscription-form-btn {
+    display: inline-block;
+
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 24px;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
     margin-left: auto;
 }
 
