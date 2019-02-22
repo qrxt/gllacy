@@ -892,33 +892,26 @@ img {
 }
 
 .location {
+    position: relative;
     height: 430px;
 
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
     background-position: center center;
 
-    margin-bottom: 5px;
+    margin-bottom: 18px;
 }
 
 .location-map {
     width: 100%;
     height: 430px;
+    border: none;
 }
 
-.location > .container::before {
-    content: "";
-
+.location > .container {
     position: absolute;
-    top: 139px;
-    left: 266px;
-
-    width: 80px;
-    height: 140px;
-
-    background-image: url("../img/pin.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    top: 0;
+    left: 0;
 }
 
 .contacts {
@@ -1016,9 +1009,7 @@ img {
 
 .main-footer {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .social-list {
@@ -1032,22 +1023,47 @@ img {
     flex-wrap: wrap;
 
     width: 267px;
+
+    padding-top: 18px;
 }
 
-.social-item:nth-child(2n+1) {
+.social-item {
+    width: 38px;
+    height: 38px;
+
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.social-item:hover,
+.social-item:focus {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-item:hover > .social-link path,
+.social-item:focus > .social-link path {
+    fill: #ffffff;
+}
+
+.social-item:active {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-item:active > .social-link path {
+    fill: rgba(255, 255, 255, 0.5); /* поправить цвет */
+}
+
+.social-item:not(:last-child) {
     margin-right: 10px;
 }
 
 .social-link {
     width: 32px;
     height: 32px;
-
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.social-link-twitter {
-    background-image: url("../img/twitter.svg");
+.social-link path {
+    fill: rgba(255, 255, 255, 0.8);
 }
 
 .additional-links {
@@ -1082,6 +1098,8 @@ img {
 }
 
 .copyright {
+    margin: 0;
+
     color: #fefefe;
     font-size: 12px;
     line-height: 18px;
