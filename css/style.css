@@ -285,6 +285,12 @@ img {
 
     display: flex;
     flex-wrap: wrap;
+
+    text-transform: lowercase;
+
+    max-width: 900px;
+
+    margin-bottom: 20px;
 }
 
 .filter-form-item {
@@ -303,6 +309,8 @@ img {
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
+
+    text-transform: capitalize;
 }
 
 .filter-form-sort {
@@ -329,6 +337,8 @@ img {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+
+    margin-bottom: 15px;
 }
 
 .filter-form-price {
@@ -340,6 +350,8 @@ img {
 }
 
 .filter-form-fattiness {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
 
@@ -350,17 +362,150 @@ img {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50px;
 
-    padding-top: 8px;
+    padding-top: 10px;
     padding-right: 17px;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
     padding-left: 14px;
 
+    margin-bottom: 15px;
+}
+
+.filter-form-radio {
+    padding-left: 32px;
+}
+
+.filter-form-fattiness .input-wrapper:not(:last-child) {
+    margin-right: 18px;
+}
+
+.filter-form-filler .input-wrapper:not(:last-child) {
+    margin-right: 22px;
+}
+
+.filter-form-check {
+    padding-left: 32px;
+}
+
+.filter-form-input {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.filter-form-input:hover + .filter-form-radio-button {
+    opacity: 1;
+}
+
+.filter-form-input:checked + .filter-form-radio-button {
+    background-image: url("../img/radio-on.svg");
+    opacity: 1;
+}
+
+.filter-form-input:focus + .filter-form-radio-button {
+    background-image: url("../img/radio-on.svg");
+    opacity: 1;
+}
+
+.filter-form-input:focus + .filter-form-radio-button {
+    opacity: 0.4;
+}
+
+.filter-form-input:checked:focus + .filter-form-radio-button {
+    opacity: 1;
+}
+
+.filter-form-input:disabled + .filter-form-radio-button {
+    opacity: 0.4;
+}
+
+.filter-form-input:hover + .filter-form-checkbox {
+    opacity: 1;
+}
+
+.filter-form-input:checked + .filter-form-checkbox {
+    background-image: url("../img/checkbox-on.svg");
+    width: 24px;
+}
+
+.filter-form-input:focus + .filter-form-checkbox,
+.filter-form-input:checked:focus + .filter-form-checkbox {
+    outline: 5px auto -webkit-focus-ring-color; /* разобраться с аутлайнами */
+    opacity: 1;
+}
+
+.filter-form-input:disabled + .filter-form-checkbox {
+    opacity: 0.4;
+}
+
+.filter-form-radio-button {
+    position: absolute;
+    top: 8px;
+
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/radio-off.svg");
+    background-size: cover;
+    opacity: 0.8;
+
+    margin-left: -32px;
+}
+
+.filter-form-checkbox {
+    position: absolute;
+    top: 8px;
+
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/checkbox-off.svg");
+    background-size: cover;
+    opacity: 0.8;
+
+    margin-left: -32px;
 }
 
 .filter-form-sort:hover,
 .filter-form-sort:focus {
     color: #323232;
     background-image: url("../img/select-arrow-black.svg");
+}
+
+.filter-form-filler {
+    position: relative;
+
+    display: flex;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 19px;
+    padding-bottom: 8px;
+
+    margin-bottom: 20px;
+}
+
+.filter-form-btn {
+    display: inline-block;
+    
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    min-height: 37px;
+
+    padding-left: 30px;
+    padding-right: 28px;
+
+    margin-top: 22px;
+    margin-bottom: 20px;
 }
 
 .products-slider {
@@ -755,6 +900,8 @@ img {
     align-items: center;
 
     list-style: none;
+
+    margin-bottom: 5px;
 }
 
 .breadcrumbs li {
@@ -790,10 +937,14 @@ img {
 }
 
 .page-title {
+    margin: 0;
+
     color: #ffffff;
     font-size: 35px;
     line-height: 41px;
     font-weight: 700;
+
+    margin-bottom: 26px;    
 }
 
 .product-examples {

@@ -126,47 +126,79 @@
             <legend>Жирность:</legend>
             <div class="filter-form-fattiness">
               <p class="input-wrapper">
-                <label>0%</label>
-                <input type="radio" value="zero" name="fattiness" id="zero">
+                <label class="filter-form-radio">
+                  <input class="filter-form-input" type="radio" value="zero" name="fattiness" id="zero">
+                  <span class="filter-form-radio-button"></span>
+                  0%
+                </label>
               </p>
               <p class="input-wrapper">
-                <label>до 10%</label>
-                <input type="radio" value="less-than-10%" name="fattiness" id="less-than-ten" checked>
+                <label class="filter-form-radio">
+                  <input class="filter-form-input" type="radio" value="less-than-10%" name="fattiness"
+                    id="less-than-ten" checked>
+                  <span class="filter-form-radio-button"></span>
+                  до 10%
+                </label>
               </p>
               <p class="input-wrapper">
-                <label>до 30%</label>
-                <input type="radio" value="less-than-30%" name="fattiness" id="less-than-thirty">
+                <label class="filter-form-radio">
+                  <input class="filter-form-input" type="radio" value="less-than-30%" name="fattiness"
+                    id="less-than-thirty">
+                  <span class="filter-form-radio-button"></span>
+                  до 30%
+                </label>
               </p>
               <p class="input-wrapper">
-                <label>выше 30%</label>
-                <input type="radio" value="more-than-30%" name="fattiness" id="more-than-thirty">
+                <label class="filter-form-radio">
+                  <input class="filter-form-input" type="radio" value="more-than-30%" name="fattiness"
+                    id="more-than-thirty">
+                  <span class="filter-form-radio-button"></span>
+                  выше 30%
+                </label>
               </p>
             </div>
           </fieldset>
           <fieldset class="filter-form-item">
             <legend>Наполнители:</legend>
-            <p class="input-wrapper">
-              <label>Шоколадные</label>
-              <input type="checkbox" name="filler" id="chocolate">
-            </p>
-            <p class="input-wrapper">
-              <label>Сахарные присыпки</label>
-              <input type="checkbox" name="filler" id="sugar">
-            </p>
-            <p class="input-wrapper">
-              <label>Фрукты</label>
-              <input type="checkbox" name="filler" id="fruits">
-            </p>
-            <p class="input-wrapper">
-              <label>Сиропы</label>
-              <input type="checkbox" name="filler" id="syrup">
-            </p>
-            <p class="input-wrapper">
-              <label>Джемы</label>
-              <input type="checkbox" name="filler" id="jam">
-            </p>
+            <div class="filter-form-filler">
+              <p class="input-wrapper">
+                <label class="filter-form-check">
+                  <input class="filter-form-input" type="checkbox" name="filler" id="chocolate" checked>
+                  <span class="filter-form-checkbox"></span>
+                  Шоколадные
+                </label>
+              </p>
+              <p class="input-wrapper">
+                <label class="filter-form-check">
+                  <input class="filter-form-input" type="checkbox" name="filler" id="sugar" checked>
+                  <span class="filter-form-checkbox"></span>
+                  Сахарные присыпки
+                </label>
+              </p>
+              <p class="input-wrapper">
+                <label class="filter-form-check">
+                  <input class="filter-form-input" type="checkbox" name="filler" id="fruits">
+                  <span class="filter-form-checkbox"></span>
+                  Фрукты
+                </label>
+              </p>
+              <p class="input-wrapper">
+                <label class="filter-form-check">
+                  <input class="filter-form-input" type="checkbox" name="filler" id="syrup">
+                  <span class="filter-form-checkbox"></span>
+                  Сиропы
+                </label>
+              </p>
+              <p class="input-wrapper">
+                <label class="filter-form-check">
+                  <input class="filter-form-input" type="checkbox" name="filler" id="jam">
+                  <span class="filter-form-checkbox"></span>
+                  Джемы
+                </label>
+              </p>
+            </div>
           </fieldset>
-          <button class="filter-form-btn btn" type="submit">Применить</button>
+          <button class="filter-form-btn" type="submit">Применить</button>
         </form>
         <section class="products">
           <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
