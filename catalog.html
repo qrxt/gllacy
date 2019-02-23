@@ -9,9 +9,108 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
   <div class="site-wrapper">
     <div class="container">
+
+
+      <header class="main-header">
+        <a href="index.html" class="logo">
+          <img class="logo-image" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси" />
+        </a>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li class="site-navigation-item site-navigation-active">
+              <a href="#" class="site-navigation-link">Каталог</a>
+              <ul class="site-navigation-submenu">
+                <li class="submenu-item new">
+                  <a href="#" class="submenu-link">Новинки</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="catalog.html" class="submenu-link active">Сливочное</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Щербеты</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Фруктовый лёд</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="#" class="submenu-link">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#" class="site-navigation-link">Доставка и оплата</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#" class="site-navigation-link">О Компании</a>
+            </li>
+          </ul>
+
+          <div class="personal-navigation">
+            <button class="personal-navigation-btn search-button" aria-label="Кнопка поиска"></button>
+            <div class="personal-navigation-search">
+              <h2 class="visually-hidden">Поиск по сайту</h2>
+              <form class="search-form" method="get" action="http://echo.htmlacademy.ru">
+                <p class="input-wrapper">
+                  <label class="visually-hidden" for="search-phrase">Поисковой запрос</label>
+                  <input type="search" placeholder="Что ищем?" name="search-phrase" id="search-phrase">
+                </p>
+              </form>
+            </div>
+            <button class="personal-navigation-btn login-button">Вход</button>
+            <section class="personal-navigation-login">
+              <h2 class="visually-hidden">Авторизация</h2>
+              <form class="login-form" method="post" action="http://echo.htmlacademy.ru">
+                <p class="input-wrapper">
+                  <label class="visually-hidden" for="auth-email">Адрес электронной почты</label>
+                  <input type="email" placeholder="Электронная почта" name="auth-email" id="auth-email">
+                </p>
+                <p class="input-wrapper">
+                  <label class="visually-hidden" for="auth-password">Пароль</label>
+                  <input type="password" placeholder="Пароль" name="auth-password" id="auth-password">
+                </p>
+                <button class="login-form-btn btn" type="submit">Войти</button>
+                <div class="login-form-links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </section>
+
+            <button class="personal-navigation-btn basket-button has-item">2 товара</button>
+            <section class="personal-navigation-order">
+              <h2 class="visually-hidden">Оформить заказ</h2>
+              <form class="order-form" method="post" action="http://echo.htmlacademy.ru">
+                <table class="order-form-products">
+                  <caption class="visually-hidden">Товары в корзине</caption>
+                  <tr class="product">
+                    <td class="product-caption">Пломбир с апельсиновым джемом</td>
+                    <td class="product-weight">1,5 кг х 200 руб.</td>
+                    <td class="product-price">300 руб.</td>
+                  </tr>
+                  <tr class="product">
+                    <td class="product-caption">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="product-weight">1,5 кг х 300 руб.</td>
+                    <td class="product-price">450 руб.</td>
+                  </tr>
+                </table>
+                <b class="order-form-total">Итого: <span class="order-form-total-value"></span></b>
+                <button class="order-form-btn btn" type="submit">Оформить заказ</button>
+              </form>
+            </section>
+          </div>
+        </nav>
+        <div class="header-schedule">
+          <p class="header-schedule-time">С 10 до 20, ежедневно</p>
+          <p class="header-schedule-phone">8 812 450-25-25</p>
+        </div>
+      </header>
+
+
+
+      <!--
       <header class="main-header">
         <a href="index.html" class="logo">
           <img class="logo-image" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси" />
@@ -103,6 +202,7 @@
 
         </nav>
       </header>
+      -->
 
       <main>
         <ul class="breadcrumbs">
@@ -327,93 +427,91 @@
           </ul>
         </section>
         <div class="pagination">
-          <a class="pagination-item pagination-direction pagination-previous" aria-label="Предыдущая страница"></a>
-          <span class="pagination-item">1</span>
+          <a class="pagination-direction pagination-previous" aria-label="Предыдущая страница"></a>
+          <span class="pagination-item pagination-item-active">1</span>
           <a class="pagination-item" href="#">2</a>
           <a class="pagination-item" href="#">3</a>
           <a class="pagination-item" href="#">4</a>
           <a class="pagination-item" href="#">5</a>
-          <a class="pagination-item pagination-direction pagination-next" aria-label="Следующая страница"></a>
+          <a class="pagination-direction pagination-next" aria-label="Следующая страница"></a>
         </div>
       </main>
 
-      <div class="container">
-        <footer class="main-footer">
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-link social-link-twitter">
-                <span class="visually-hidden">Мы в Twitter</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                  <path fill="#FFF"
-                    d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link social-link-instagram">
-                <span class="visually-hidden">Мы в Instagram</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                  <g fill="#FFF">
-                    <path
-                      d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z" />
-                    <path
-                      d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z" />
-                    <path
-                      d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z" />
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link social-link-facebook">
-                <span class="visually-hidden">Мы в Facebook</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                  <path fill="#FFF"
-                    d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link social-link-vk">
-                <span class="visually-hidden">Наш Вконтакте</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                  <g fill="#FFF">
-                    <path
-                      d="M16.637 14.495c.402-.019.719-.082.951-.188.326-.145.54-.33.641-.559.101-.229.15-.496.15-.797 0-.232-.058-.465-.174-.697-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165a76.242 76.242 0 0 0-1.652-.014h-.339v2.965h.565c.571 0 1.057-.009 1.459-.028zM18.118 17.084c-.282-.081-.672-.125-1.166-.132a127.97 127.97 0 0 0-1.55-.009h-.79v3.493h.264c1.014 0 1.74-.003 2.18-.009a3.2 3.2 0 0 0 1.212-.245c.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.261-1.03-.17-.241-.464-.423-.877-.543z" />
-                    <path
-                      d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.531a3.73 3.73 0 0 1-1.124 1.327c-.552.415-1.161.71-1.823.886s-1.501.264-2.519.264h-6.121V8.987h5.443c1.13 0 1.957.038 2.48.113a5.126 5.126 0 0 1 1.561.5c.533.27.929.632 1.189 1.087.26.455.392.975.392 1.558 0 .678-.179 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.559 2.179 1.13.537.571.807 1.325.807 2.261 0 .678-.138 1.283-.411 1.817z" />
-                  </g>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="additional-links">
-            <li class="additional-links-item">
-              <a href="#" class="decorated">Для поставщиков</a>
-            </li>
-            <li class="additional-links-item">
-              <a href="#">Наши документы</a>
-            </li>
-            <li class="additional-links-item">
-              <a href="#">О производстве</a>
-            </li>
-            <li class="additional-links-item">
-              <a href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-
-          <p class="copyright">
-            <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработчик сайта">
-              <img src="./img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"
-                class="footer-logo" />
+      <footer class="main-footer">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link social-link-twitter">
+              <span class="visually-hidden">Мы в Twitter</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path fill="#FFF"
+                  d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z" />
+              </svg>
             </a>
-            Сделано в
-            <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> ©
-            2019
-          </p>
-        </footer>
-      </div>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link social-link-instagram">
+              <span class="visually-hidden">Мы в Instagram</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <g fill="#FFF">
+                  <path
+                    d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z" />
+                  <path
+                    d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z" />
+                  <path
+                    d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link social-link-facebook">
+              <span class="visually-hidden">Мы в Facebook</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path fill="#FFF"
+                  d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link social-link-vk">
+              <span class="visually-hidden">Наш Вконтакте</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <g fill="#FFF">
+                  <path
+                    d="M16.637 14.495c.402-.019.719-.082.951-.188.326-.145.54-.33.641-.559.101-.229.15-.496.15-.797 0-.232-.058-.465-.174-.697-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165a76.242 76.242 0 0 0-1.652-.014h-.339v2.965h.565c.571 0 1.057-.009 1.459-.028zM18.118 17.084c-.282-.081-.672-.125-1.166-.132a127.97 127.97 0 0 0-1.55-.009h-.79v3.493h.264c1.014 0 1.74-.003 2.18-.009a3.2 3.2 0 0 0 1.212-.245c.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.261-1.03-.17-.241-.464-.423-.877-.543z" />
+                  <path
+                    d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.531a3.73 3.73 0 0 1-1.124 1.327c-.552.415-1.161.71-1.823.886s-1.501.264-2.519.264h-6.121V8.987h5.443c1.13 0 1.957.038 2.48.113a5.126 5.126 0 0 1 1.561.5c.533.27.929.632 1.189 1.087.26.455.392.975.392 1.558 0 .678-.179 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.559 2.179 1.13.537.571.807 1.325.807 2.261 0 .678-.138 1.283-.411 1.817z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="additional-links">
+          <li class="additional-links-item">
+            <a href="#" class="decorated">Для поставщиков</a>
+          </li>
+          <li class="additional-links-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="additional-links-item">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="additional-links-item">
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработчик сайта">
+            <img src="./img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"
+              class="footer-logo" />
+          </a>
+          Сделано в
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> ©
+          2019
+        </p>
+      </footer>
     </div>
   </div>
 </body>
