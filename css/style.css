@@ -399,7 +399,7 @@ img {
 
 .filter-form-input:checked + .filter-form-radio-button {
     background-image: url("../img/radio-on.svg");
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .filter-form-input:focus + .filter-form-radio-button {
@@ -430,7 +430,6 @@ img {
 
 .filter-form-input:focus + .filter-form-checkbox,
 .filter-form-input:checked:focus + .filter-form-checkbox {
-    outline: 5px auto -webkit-focus-ring-color; /* разобраться с аутлайнами */
     opacity: 1;
 }
 
@@ -1158,6 +1157,27 @@ img {
 .pagination {
     display: flex;
     justify-content: flex-end;
+
+    margin-bottom: 30px;
+}
+
+.pagination-direction {
+    width: 8px;
+    height: 12px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.2;
+}
+
+.pagination-direction:hover,
+.pagination-direction:focus {
+    opacity: 1;
+}
+
+.pagination-previous {
+    background-image: url("../img/icon-right-small.svg")
 }
 
 .main-footer {
