@@ -989,6 +989,8 @@ img {
 
     display: flex;
     flex-wrap: wrap;
+
+    margin-bottom: 40px;
 }
 
 .products-item {
@@ -999,7 +1001,7 @@ img {
     align-items: center;
     width: 267px;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     list-style: none;
 }
@@ -1018,7 +1020,7 @@ img {
 }
 
 .products > .products-list > .products-item {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .products-item:not(:nth-child(4n)) {
