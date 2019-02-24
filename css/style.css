@@ -114,6 +114,7 @@ img {
 }
 
 .main-navigation {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -132,8 +133,6 @@ img {
     display: flex;
 }
 
-.personal-navigation > :not(.personal-navigation-btn),
-.site-navigation-submenu,
 .feedback {
     display: none; /* временно скрыто */
 }
@@ -174,6 +173,64 @@ img {
     margin-right: 10px;
 }
 
+.site-navigation-submenu {
+    position: absolute;
+    padding: 0;
+
+    top: 37px;
+    left: -8px;
+
+    min-width: 143px;
+
+    background-color: #f8f7f4;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    
+    padding-top: 3px;
+    padding-bottom: 5px;
+
+    z-index: 20;
+}
+
+.submenu-item-new > .submenu-link {
+    font-weight: 700;
+}
+
+.submenu-link {
+    display: block;
+
+    color: #323232;
+    font-size: 14px;
+    line-height: 16px;
+
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 6px;
+
+    text-decoration: none;
+}
+
+.submenu-link:hover,
+.submenu-link:focus {
+    background-color: #fbded8;
+}
+
+.submenu-item-new::after {
+    display: block;
+    content: "";
+
+    height: 1px;
+    width: 90%;
+
+    margin-top: 4px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    margin-left: 7px;
+
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
 .search-button {
     width: 33px;
     height: 33px;
@@ -188,6 +245,124 @@ img {
 .search-button:focus,
 .search-button:active {
     background-image: url("../img/loupe-black.svg");
+}
+
+.personal-navigation-search {
+    position: absolute;
+    right: 213px;
+    top: 50px;
+
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+
+    z-index: 20;
+}
+
+.search-form input[type="search"] {
+    position: relative;
+
+    border-radius: 5px;
+    border: solid 1px #d3d3d2;
+
+    padding-top: 11px;
+    padding-right: 112px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+}
+
+.search-form input[type="search"]::placeholder {
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.search-form input[type="search"]::-webkit-search-cancel-button{
+    position: absolute;
+    right: 10px;
+}
+
+.personal-navigation-login {
+    position: absolute;
+    top: 50px;
+    right: 110px;
+
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+
+    z-index: 19;
+
+    min-width: 277px;
+
+    padding-top: 20px;
+    padding-right: 17px;
+    padding-bottom: 20px;
+    padding-left: 19px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+
+    border-radius: 5px;
+    border: solid 1px #d3d3d2;
+
+    padding-top: 12px;
+    padding-right: 25px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+
+    margin-bottom: 20px;
+}
+
+.login-form input[type="email"]::placeholder,
+.login-form input[type="password"]::placeholder {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.login-form-wrapper {
+    display: flex;
+}
+
+.login-form-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-links a {
+    color: #323232;
+    font-size: 13px;
+    line-height: 24px;
+
+    text-decoration: underline;
+    text-decoration-color: #323232;
+}
+
+.login-form-btn {
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+
+    margin-right: 20px;
 }
 
 .login-button {
@@ -646,6 +821,7 @@ img {
 }
 
 .products-slider-controls {
+    /* фокус */
     position: absolute;
     bottom: 45px;
     left: 0;
