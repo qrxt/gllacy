@@ -109,15 +109,13 @@ img {
     margin-bottom: 18px;
 }
 
-.logo,
 .logo-image {
     margin-right: 11px;
 }
 
 .main-navigation {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
 
     font-size: 16px;
@@ -127,6 +125,9 @@ img {
 .site-navigation {
     margin: 0;
     padding: 0;
+
+    padding-top: 12px;
+    padding-bottom: 22px;
 
     display: flex;
 }
@@ -139,7 +140,11 @@ img {
 
 .personal-navigation {
     display: flex;
-    align-items: center;
+
+    padding-top: 13px;
+    padding-bottom: 25px;
+
+    margin-left: auto;
 }
 
 .personal-navigation-btn {
@@ -239,48 +244,37 @@ img {
     list-style: none;
 }
 
-.site-navigation-item {
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    border-radius: 15px;
-}
-
-.site-navigation-active {
-    background-color: #d07058;
-}
-
-.site-navigation-active a {
-    border: none;
-}
-
 .site-navigation-item:not(:last-child) {
     margin-right: 5px;
 }
 
 .site-navigation-link {
+    position: relative;
+    display: block;
+
+    border-radius: 15px;
+
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
     color: #ffffff;
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+    background-color: #ffffff;
+    color: #323232;
+    /* подчеркивания псевдоэлементами лол */
 }
 
 .site-navigation-link.active {
     background-color: #d07058;
     color: #ffffff;
-}
-
-.site-navigation-item:not(.site-navigation-active) > .site-navigation-link:hover {
-    color: #333333;
-    border: none;
-}
-
-.site-navigation-item:not(.site-navigation-active):hover,
-.site-navigation-link:not(.site-navigation-active a):hover {
-    background-color: #ffffff;
 }
 
 .header-schedule {
