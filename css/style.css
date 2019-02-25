@@ -90,6 +90,11 @@ a {
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
+.text-input:hover {
+    border-color: rgba(154, 154, 154, 0.5);
+    box-shadow: inset 0 0 0 1px rgba(154, 154, 154, 0.5);
+}
+
 .container {
     position: relative;
 
@@ -130,6 +135,8 @@ a {
 }
 
 .feedback {
+    display: none;
+
     position: fixed;
     top: calc(50% - 147px);
     left: calc(50% - 239px);
@@ -1368,6 +1375,7 @@ a {
 }
 
 .subscription-form input {
+
     padding-top: 12px;
     padding-right: 170px;
     padding-bottom: 11px;
@@ -1375,11 +1383,6 @@ a {
 
     border: 1px solid rgba(178, 178, 178, 0.5);
     border-radius: 5px;
-}
-
-.subscription-form input:hover,
-.subscription-form input:focus {
-    border: solid 1px rgba(154, 154, 154, 0.52);
 }
 
 .subscription-form input::placeholder {
