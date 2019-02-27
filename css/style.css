@@ -1384,7 +1384,7 @@ a {
     margin-bottom: 25px;
 }
 
-.news { /* поле ввода пофиксить по стайлгайду */
+.news {
     color: #323232;
     background-color: #ffffff;
     background-image: url("../img/strawberry.jpg");
@@ -1433,6 +1433,8 @@ a {
 .subscription {
     background-color: #ffffff;
     background-image: url("../img/bg-post.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     border-radius: 15px;
 
@@ -1454,7 +1456,7 @@ a {
     padding-top: 30px;
     padding-right: 20px;
     padding-left: 21px;
-    padding-bottom: 36px;
+    padding-bottom: 34px;
 }
 
 .subscription-text {
@@ -1476,9 +1478,9 @@ a {
 
 .subscription-form input {
 
-    padding-top: 12px;
+    padding-top: 10px;
     padding-right: 170px;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
     padding-left: 12px;
 
     border: 1px solid rgba(178, 178, 178, 0.5);
