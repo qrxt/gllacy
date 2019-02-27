@@ -289,7 +289,7 @@ a {
     color: #000000;
 }
 
-.personal-navigation .personal-navigation-btn:not(:last-child) {
+.personal-navigation .personal-navigation-btn:not(:last-of-type) {
     margin-right: 10px;
 }
 
