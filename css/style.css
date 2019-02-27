@@ -1,3 +1,4 @@
+/* размеры карточек с товарами */
 html { box-sizing: border-box; }
 
 *, *::before, *::after { box-sizing: inherit; }
@@ -95,6 +96,9 @@ a {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
+
+    border-radius: 5px;
+    border: solid 1px #d3d3d2;
 }
 
 .text-input::placeholder {
@@ -291,8 +295,6 @@ a {
 
 .site-navigation-submenu {
     position: absolute;
-    padding: 0;
-
     top: 37px;
     left: -8px;
 
@@ -301,6 +303,12 @@ a {
     background-color: #f8f7f4;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+
+    padding: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.15s;
 
     overflow: hidden;
     z-index: 20;
@@ -340,6 +348,7 @@ a {
 }
 
 .submenu-link.active {
+    color: #ffffff;
     background-color: #d07058;
 }
 
@@ -358,6 +367,12 @@ a {
     margin-left: 7px;
 
     background-color: rgb(0, 0, 0, 0.2);
+}
+
+.site-navigation-item:hover .site-navigation-submenu,
+.site-navigation-submenu:hover {
+    visibility: visible;
+    opacity: 1;
 }
 
 .search-button {
@@ -396,19 +411,10 @@ a {
 .search-form input{
     position: relative;
 
-    border-radius: 5px;
-    border: solid 1px #d3d3d2;
-
     padding-top: 11px;
     padding-right: 112px;
     padding-bottom: 12px;
     padding-left: 15px;
-}
-
-.search-form input::placeholder {
-    color: #999999;
-    font-size: 14px;
-    line-height: 24px;
 }
 
 .search-form input::-webkit-search-cancel-button{
@@ -440,12 +446,8 @@ a {
     flex-direction: column;
 }
 
-.login-form input[type="email"],
-.login-form input[type="password"] {
+.login-form input {
     width: 100%;
-
-    border-radius: 5px;
-    border: solid 1px #d3d3d2;
 
     padding-top: 12px;
     padding-right: 25px;
@@ -453,13 +455,6 @@ a {
     padding-left: 15px;
 
     margin-bottom: 20px;
-}
-
-.login-form input[type="email"]::placeholder,
-.login-form input[type="password"]::placeholder {
-    font-size: 14px;
-    line-height: 24px;
-    color: #999999;
 }
 
 .login-form-wrapper {
@@ -544,6 +539,8 @@ a {
 .has-item {
     background-color: #ffffff;
     color: #000;
+
+    margin: 0;
 }
 
 .has-item::before {
@@ -680,14 +677,14 @@ a {
     border-radius: 50px;
 
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: url("../img/icon-down-dir.svg");
+    background-image: url("../img/icon-down-dir-white.svg");
     background-repeat: no-repeat;
     background-position-x: 170px;
     background-position-y: center;
     background-size: 10px 11px;
 
     padding-top: 9px;
-    padding-right: 51px;
+    padding-right: 34px;
     padding-bottom: 9px;
     padding-left: 15px;
 
@@ -700,6 +697,7 @@ a {
 
 .filter-form-sort:hover,
 .filter-form-sort:focus {
+    background-image: url("../img/icon-down-dir-black.svg");
     color: #323232;
 }
 
@@ -1327,7 +1325,7 @@ a {
     margin-bottom: 25px;
 }
 
-.news {
+.news { /* поле ввода пофиксить по стайлгайду */
     color: #323232;
     background-color: #ffffff;
     background-image: url("../img/strawberry.jpg");
@@ -1509,7 +1507,7 @@ a {
 }
 
 .product-examples {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .products-list {
@@ -1520,8 +1518,8 @@ a {
     flex-wrap: wrap;
 }
 
-.products > .products-list {
-    margin-bottom: 40px;
+.catalog-products .products-list {
+    margin-bottom: 43px;
 }
 
 .products-item {
@@ -1537,9 +1535,7 @@ a {
     list-style: none;
 }
 
-.products-item:hover::before,
-.products-item-link:focus::before,
-.products-item-description:focus::before {
+.products-item:hover::before {
     content: "";
 
     position: absolute;
@@ -1584,8 +1580,13 @@ a {
     margin-right: 26px;
 }
 
-.products-item-link img {
+.products-item-image {
+    width: 267px;
+    height: 267px;
+
     border-radius: 50%;
+
+    margin-bottom: 5px;
 }
 
 .products-item-price { 
