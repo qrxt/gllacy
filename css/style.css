@@ -819,30 +819,58 @@ a {
     -moz-appearance: none;
 }
 
-.filter-form-input:hover + .filter-form-radio-button {
+.filter-form-radio::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/radio-off.svg");
+    background-size: cover;
+    opacity: 0.8;
+
+    margin-left: -32px;
+}
+
+.filter-form-input:hover + .filter-form-radio::before {
     opacity: 1;
 }
 
-.filter-form-input:checked + .filter-form-radio-button {
+.filter-form-input:checked + .filter-form-radio::before {
     background-image: url("../img/radio-on.svg");
     opacity: 0.8;
 }
 
-.filter-form-input:focus + .filter-form-radio-button {
+.filter-form-input:focus + .filter-form-radio::before {
     background-image: url("../img/radio-on.svg");
     opacity: 1;
 }
 
-.filter-form-input:focus + .filter-form-radio-button {
+.filter-form-input:focus + .filter-form-radio::before {
     opacity: 0.4;
 }
 
-.filter-form-input:checked:focus + .filter-form-radio-button {
+.filter-form-input:checked:focus + .filter-form-radio::before {
     opacity: 1;
 }
 
-.filter-form-input:disabled + .filter-form-radio-button {
+.filter-form-input:disabled + .filter-form-radio::before {
     opacity: 0.4;
+}
+
+.filter-form-checkbox {
+    position: absolute;
+    top: 8px;
+
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/checkbox-off.svg");
+    background-size: cover;
+    opacity: 0.8;
+
+    margin-left: -32px;
 }
 
 .filter-form-input:hover + .filter-form-checkbox {
@@ -861,32 +889,6 @@ a {
 
 .filter-form-input:disabled + .filter-form-checkbox {
     opacity: 0.4;
-}
-
-.filter-form-radio-button {
-    position: absolute;
-    top: 8px;
-
-    width: 22px;
-    height: 22px;
-    background-image: url("../img/radio-off.svg");
-    background-size: cover;
-    opacity: 0.8;
-
-    margin-left: -32px;
-}
-
-.filter-form-checkbox {
-    position: absolute;
-    top: 8px;
-
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/checkbox-off.svg");
-    background-size: cover;
-    opacity: 0.8;
-
-    margin-left: -32px;
 }
 
 .filter-form-filler {
