@@ -289,7 +289,7 @@ a {
     color: #000000;
 }
 
-.personal-navigation-btn:not(:last-child) {
+.personal-navigation .personal-navigation-btn:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -312,6 +312,14 @@ a {
 
     overflow: hidden;
     z-index: 20;
+}
+
+.site-navigation-item:hover .site-navigation-submenu,
+.site-navigation-submenu:hover,
+.site-navigation-link:focus + .site-navigation-submenu,
+.site-navigation-submenu:focus-within {
+    visibility: visible;
+    opacity: 1;
 }
 
 .submenu-item-new > .submenu-link {
@@ -369,12 +377,6 @@ a {
     background-color: rgb(0, 0, 0, 0.2);
 }
 
-.site-navigation-item:hover .site-navigation-submenu,
-.site-navigation-submenu:hover {
-    visibility: visible;
-    opacity: 1;
-}
-
 .search-button {
     width: 33px;
     height: 33px;
@@ -405,7 +407,19 @@ a {
     padding-bottom: 20px;
     padding-left: 15px;
 
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.15s;
+
     z-index: 20;
+}
+
+.search-button:hover + .personal-navigation-search,
+.personal-navigation-search:hover,
+.search-button:focus + .personal-navigation-search,
+.personal-navigation-search:focus-within {
+    opacity: 1;
+    visibility: visible;
 }
 
 .search-form input{
@@ -435,10 +449,22 @@ a {
 
     min-width: 277px;
 
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.15s;
+
     padding-top: 20px;
     padding-right: 17px;
     padding-bottom: 20px;
     padding-left: 19px;
+}
+
+.login-button:hover + .personal-navigation-login,
+.personal-navigation-login:hover,
+.login-button:focus + .personal-navigation-login,
+.personal-navigation-login:focus-within {
+    visibility: visible;
+    opacity: 1;
 }
 
 .login-form {
@@ -539,8 +565,6 @@ a {
 .has-item {
     background-color: #ffffff;
     color: #000;
-
-    margin: 0;
 }
 
 .has-item::before {
@@ -956,7 +980,21 @@ a {
     padding-bottom: 20px;
     padding-left: 15px;
 
+    /*
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.15s;
+    */
+    
     z-index: 18;
+}
+
+.basket-button:hover  + .personal-navigation-order,
+.personal-navigation-order:hover,
+.basket-button:focus + .personal-navigation-order,
+.personal-navigation-order:focus-within {
+    visibility: visible;
+    opacity: 1;
 }
 
 .order-form {
