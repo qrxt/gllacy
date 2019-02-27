@@ -971,6 +971,8 @@ a {
     right: 0;
     top: 50px;
 
+    width: 540px;
+
     background-color: #f8f7f4;
     border-radius: 5px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -978,13 +980,11 @@ a {
     padding-top: 14px;
     padding-right: 16px;
     padding-bottom: 20px;
-    padding-left: 15px;
+    padding-left: 16px;
 
-    /*
     visibility: hidden;
     opacity: 0;
     transition: 0.15s;
-    */
     
     z-index: 18;
 }
@@ -1005,8 +1005,6 @@ a {
     color: #323232;
     font-size: 13px;
     line-height: 16px;
-
-    vertical-align: top;
 }
 
 .order-form td {
@@ -1014,15 +1012,29 @@ a {
 }
 
 .order-form-products {
+    border-collapse: collapse;
+    border-spacing: 10px;
     margin-bottom: 17px;
+
+    text-align: left;
+}
+
+.order-form-products tr {
+    vertical-align: middle;
+}
+
+.order-form-products td {
+    padding-top: 6px;
+    
+    padding-bottom: 12px;
+}
+
+.order-form-products td:not(:last-of-type) {
+    padding-right: 14px;
 }
 
 .order-form .product {
     display: block;
-}
-
-.order-form .product:not(:last-child) {
-    margin-bottom: 20px;
 }
 
 .order-form-products::after {
@@ -1052,9 +1064,17 @@ a {
     margin-bottom: 16px;
 }
 
-.product-remove {
+.order-form-btn {
+    padding-top: 11px;
     padding-right: 14px;
+    padding-bottom: 11px;
+    padding-left: 14px;
+}
+
+.product-remove {
     width: 20px;
+
+    padding: 100px;
 }
 
 .product-remove-btn {
@@ -1071,11 +1091,6 @@ a {
     background-color: transparent;
     background-image: url("../img/cross-small.svg");
     background-repeat: no-repeat;
-
-    padding-top: 10px;
-    padding-right: 6px;
-    padding-bottom: 10px;
-    padding-left: 6px;
 }
 
 .product-photo {
@@ -1092,12 +1107,14 @@ a {
 .product-caption {
     width: 240px;
     margin-right: 32px;
-
-    padding-right: 14px;
 }
 
 .product-weight {
     width: 120px;
+}
+
+.product-price {
+
 }
 
 .products-slider {
