@@ -251,13 +251,16 @@
           <form class="feedback-form" method="post" action="http://echo.htmlacademy.ru">
             <p class="input-wrapper">
               <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-              <input type="text" placeholder="Как вас зовут?" name="feedback-name" id="feedback-name">
+              <input class="text-input" type="text" placeholder="Как вас зовут?" name="feedback-name"
+                id="feedback-name">
             </p>
             <p class="input-wrapper">
               <label class="visually-hidden" for="feedback-email">Адрес электронной почты</label>
-              <input type="email" placeholder="Ваша почта для ответа?" name="feedback-email" id="feedback-email">
+              <input class="text-input" type="email" placeholder="Ваша почта для ответа?" name="feedback-email"
+                id="feedback-email">
             </p>
-            <textarea name="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
+            <textarea class="text-input" name="feedback-message" id="feedback-message"
+              placeholder="Напишите что-нибудь..."></textarea>
             <button class="feedback-form-btn btn" type="submit">Отправить</button>
             <button class="feedback-form-close">
               <span class="visually-hidden">Закрыть</span>
@@ -367,7 +370,9 @@
         </p>
       </footer>
     </div>
+    <div class="overlay"></div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

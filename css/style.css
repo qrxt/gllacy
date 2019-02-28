@@ -1,7 +1,10 @@
-/* размеры карточек с товарами */
-html { box-sizing: border-box; }
+html {
+    box-sizing: border-box;
+}
 
-*, *::before, *::after { box-sizing: inherit; }
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 body {
     margin: 0;
@@ -160,8 +163,6 @@ a {
 }
 
 .feedback {
-    display: none;
-
     position: fixed;
     top: calc(50% - 147px);
     left: calc(50% - 239px);
@@ -174,7 +175,11 @@ a {
     padding-bottom: 27px;
     padding-left: 24px;
 
-    z-index: 22;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.15;
+
+    z-index: 41;
 }
 
 .feedback-title {
@@ -1113,10 +1118,6 @@ a {
     width: 120px;
 }
 
-.product-price {
-
-}
-
 .products-slider {
     position: relative;
 
@@ -2049,4 +2050,80 @@ a {
 .copyright-link:hover {
     color: #ffbc9e;
     border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in 0.2s;
+
+    z-index: 0;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    z-index: 40;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.modal-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-bounce {
+    animation: bounce 0.5s;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+}
+
+.modal-error {
+    animation: shake 0.5s;
 }
