@@ -102,9 +102,18 @@ a {
 
     border-radius: 5px;
     border: solid 1px #d3d3d2;
+
+    height: 45px;
 }
 
 .text-input::placeholder {
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.text-input:-ms-input-placeholder {
     color: #999999;
     font-size: 14px;
     line-height: 24px;
@@ -133,6 +142,7 @@ a {
 
 .main-header {
     position: relative;
+    display: -ms-flexbox;
     display: flex;
 
     margin-bottom: 18px;
@@ -144,6 +154,8 @@ a {
 
 .main-navigation {
     position: relative;
+
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -159,6 +171,7 @@ a {
     padding-top: 14px;
     padding-bottom: 22px;
 
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -194,6 +207,7 @@ a {
 }
 
 .feedback-form {
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -265,6 +279,7 @@ a {
 
 .personal-navigation {
     position: relative;
+    display: -ms-flexbox;
     display: flex;
 
     padding-top: 13px;
@@ -323,7 +338,11 @@ a {
 
 .site-navigation-item:hover .site-navigation-submenu,
 .site-navigation-submenu:hover,
-.site-navigation-link:focus + .site-navigation-submenu,
+.site-navigation-link:focus + .site-navigation-submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
 .site-navigation-submenu:focus-within {
     visibility: visible;
     opacity: 1;
@@ -438,7 +457,11 @@ a {
 
 .search-button:hover + .personal-navigation-search,
 .personal-navigation-search:hover,
-.search-button:focus + .personal-navigation-search,
+.search-button:focus + .personal-navigation-search {
+    opacity: 1;
+    visibility: visible;
+}
+
 .personal-navigation-search:focus-within {
     opacity: 1;
     visibility: visible;
@@ -490,6 +513,7 @@ a {
 }
 
 .login-form {
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
 }
@@ -506,10 +530,12 @@ a {
 }
 
 .login-form-wrapper {
+    display: -ms-flexbox;
     display: flex;
 }
 
 .login-form-links {
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
 }
@@ -709,6 +735,7 @@ a {
     margin: 0;
     padding: 0;
 
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 
@@ -850,6 +877,7 @@ a {
 .filter-form-fattiness {
     position: relative;
 
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 
@@ -968,6 +996,7 @@ a {
 .filter-form-filler {
     position: relative;
 
+    display: -ms-flexbox;
     display: flex;
 
     background-color: rgba(255, 255, 255, 0.2);
@@ -1046,6 +1075,7 @@ a {
 }
 
 .order-form {
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1264,8 +1294,10 @@ a {
 }
 
 .special-offers {
+    display: -ms-flexbox;
     display: flex;
     align-items: flex-start;
+    -ms-flex-pack: space-between;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -1273,6 +1305,7 @@ a {
 }
 
 .offer {
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 
@@ -1378,6 +1411,7 @@ a {
 
     list-style: none;
 
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1421,6 +1455,7 @@ a {
 }
 
 .blocks-wrapper {
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1502,6 +1537,7 @@ a {
 }
 
 .subscription-form {
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1509,9 +1545,11 @@ a {
 }
 
 .subscription-form input {
+    display: block;
+    width: 366px;
 
     padding-top: 10px;
-    padding-right: 170px;
+    padding-right: 12px;
     padding-bottom: 9px;
     padding-left: 12px;
 
@@ -1549,6 +1587,7 @@ a {
     margin: 0;
     padding: 0;
 
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
 
@@ -1608,6 +1647,7 @@ a {
     margin: 0;
     padding: 0;
 
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1619,6 +1659,7 @@ a {
 .products-item {
     position: relative;
 
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1725,6 +1766,8 @@ a {
 .products-item-header {
     margin: 0;
 
+    width: 267px;
+
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
@@ -1737,6 +1780,7 @@ a {
 .products-item-btn {
     position: absolute;
     bottom: -60px;
+    left: 35px;
 
     visibility: hidden;
 
@@ -1868,6 +1912,7 @@ a {
 .pagination {
     position: relative;
 
+    display: -ms-flexbox;
     display: flex;
     justify-content: flex-end;
 
@@ -1934,6 +1979,7 @@ a {
 }
 
 .main-footer {
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1954,6 +2000,7 @@ a {
 
     list-style: none;
 
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 
@@ -2024,11 +2071,12 @@ a {
     margin: 0;
     padding: 0;
 
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 
-    max-width: 350px;
+    width: 350px;
 
     list-style: none;
 

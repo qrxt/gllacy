@@ -18,7 +18,7 @@ const closeFeedbackPopup = function () {
     feedbackPopup.classList.remove("modal-error");
 }
 
-const dataFromStorage = (localStorage.getItem("username") && localStorage.getItem("userEmail")) ?
+const dataFromStorage = (localStorage && localStorage.getItem("username") && localStorage.getItem("userEmail")) ?
     { name: localStorage.getItem("username"), email: localStorage.getItem("userEmail") }
     : null;
 
