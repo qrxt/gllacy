@@ -506,7 +506,11 @@ a {
 
 .login-button:hover + .personal-navigation-login,
 .personal-navigation-login:hover,
-.login-button:focus + .personal-navigation-login,
+.login-button:focus + .personal-navigation-login {
+    visibility: visible;
+    opacity: 1;
+}
+
 .personal-navigation-login:focus-within {
     visibility: visible;
     opacity: 1;
@@ -789,9 +793,14 @@ a {
 
     -moz-appearance: none;
     -webkit-appearance: none;
+    -ms-appearance: none;
     appearance: none;
 
     margin-bottom: 15px;
+}
+
+.filter-form-sort::-ms-expand {
+    display: none;
 }
 
 .filter-form-sort:hover,
@@ -915,8 +924,13 @@ a {
 .filter-form-input {
     position: absolute;
     appearance: none;
+    -ms-appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    -moz-appearance: none;  
+}
+
+.filter-form-input::-ms-check {
+    display: none;
 }
 
 .filter-form-radio::before {
@@ -1068,7 +1082,11 @@ a {
 
 .basket-button:hover  + .personal-navigation-order,
 .personal-navigation-order:hover,
-.basket-button:focus + .personal-navigation-order,
+.basket-button:focus + .personal-navigation-order {
+    visibility: visible;
+    opacity: 1;
+}
+
 .personal-navigation-order:focus-within {
     visibility: visible;
     opacity: 1;
@@ -1298,7 +1316,6 @@ a {
     display: flex;
     align-items: flex-start;
     -ms-flex-pack: space-between;
-    justify-content: space-between;
     flex-wrap: wrap;
 
     margin-bottom: 20px;
@@ -1332,6 +1349,8 @@ a {
     background-image: url("../img/chocolate.jpg");
     background-position-x: -218px;
     background-position-y: -105px;
+
+    margin-left: auto;
 }
 
 .offer-caption {
@@ -1670,7 +1689,7 @@ a {
     list-style: none;
 }
 
-.products-item:hover::before {
+.products-item::before {
     content: "";
 
     position: absolute;
@@ -1686,11 +1705,22 @@ a {
     background-color: #f8f7f4;
     opacity: 0.2;
 
+    visibility: hidden;
+
     z-index: 10;
 }
 
+.products-item:focus-within::before {
+    visibility: visible;
+}
+
+.products-item:hover::before,
 .products-item:hover .products-item-btn,
 .products-item:focus .products-item-btn {
+    visibility: visible;
+}
+
+.products-item:focus-within .products-item-btn {
     visibility: visible;
 }
 
@@ -2147,7 +2177,8 @@ a {
     line-height: 18px;
 }
 
-.copyright-link:hover {
+.copyright-link:hover,
+.copyright-link:focus {
     color: #ffbc9e;
     border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
