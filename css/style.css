@@ -1,4 +1,6 @@
 html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -120,6 +122,13 @@ a {
     font-weight: 400;
 }
 
+.text-input::-ms-input-placeholder {
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
 .text-input:hover {
     border-color: rgba(154, 154, 154, 0.5);
     box-shadow: inset 0 0 0 1px rgba(154, 154, 154, 0.5);
@@ -173,6 +182,9 @@ a {
 
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+
+    max-width: 700px;
 }
 
 .feedback {
@@ -252,6 +264,7 @@ a {
 
 .feedback-form-btn {
     margin-left: auto;
+    align-self: flex-end;
 
     padding-top: 10px;
     padding-right: 22px;
@@ -452,7 +465,7 @@ a {
     opacity: 0;
     transition: 0.15s;
 
-    z-index: 20;
+    z-index: 19;
 }
 
 .search-button:hover + .personal-navigation-search,
@@ -615,6 +628,8 @@ a {
 
     width: 100%;
     height: 10px;
+
+    z-index: 19;
 }
 
 .basket-button {
@@ -625,6 +640,19 @@ a {
 
 .basket-button::before {
     background-image: url("../img/basket.svg");
+}
+
+.basket-button::after {
+    content: "";
+
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+
+    z-index: 19;
 }
 
 .has-item {
@@ -713,6 +741,8 @@ a {
     right: 0;
 
     text-align: right;
+
+    z-index: 18;
 }
 
 .header-schedule-time {
@@ -996,6 +1026,7 @@ a {
 .filter-form-input:checked + .filter-form-check::before {
     background-image: url("../img/checkbox-on.svg");
     width: 24px;
+    height: 21px;
 }
 
 .filter-form-input:focus + .filter-form-check::before ,
@@ -1027,10 +1058,11 @@ a {
 .filter-form-btn {
     display: inline-block;
     
+    color: #ffffff;
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    color: #ffffff;
+    vertical-align: top;
 
     border: 2px solid #ffffff;
     border-radius: 50px;
@@ -1077,7 +1109,7 @@ a {
     opacity: 0;
     transition: 0.15s;
     
-    z-index: 18;
+    z-index: 19;
 }
 
 .basket-button:hover  + .personal-navigation-order,
@@ -1146,6 +1178,7 @@ a {
 }
 
 .order-form-btn {
+    align-self: flex-end;
     margin-left: auto;
 }
 
@@ -1156,6 +1189,7 @@ a {
     line-height: 18px;
     font-weight: 700;
 
+    align-self: flex-end;
     margin-left: auto;
     margin-bottom: 16px;
 }
@@ -1181,6 +1215,8 @@ a {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+
+    cursor: pointer;
 
     border: none;
 
@@ -1337,6 +1373,10 @@ a {
     margin-bottom: 20px;
 }
 
+.offer:nth-child(2n+1) {
+    margin-left: auto;
+}
+
 .offer-raspberry {
     background-color: #701e28;
     background-image: url("../img/raspberry.jpg");
@@ -1349,8 +1389,6 @@ a {
     background-image: url("../img/chocolate.jpg");
     background-position-x: -218px;
     background-position-y: -105px;
-
-    margin-left: auto;
 }
 
 .offer-caption {
@@ -1598,7 +1636,7 @@ a {
     padding-bottom: 10px;
     padding-left: 19px;
 
-    vertical-align: midle;
+    vertical-align: top;
     margin-left: auto;
 }
 
@@ -1796,7 +1834,7 @@ a {
 .products-item-header {
     margin: 0;
 
-    width: 267px;
+    max-width: 267px;
 
     font-size: 16px;
     line-height: 22px;
@@ -1932,9 +1970,9 @@ a {
     font-weight: 700;
 
     padding-top: 10px;
-    padding-right: 28px;
+    padding-right: 27px;
     padding-bottom: 10px;
-    padding-left: 28px;
+    padding-left: 27px;
 
     width: 100%;
 }
@@ -2034,6 +2072,8 @@ a {
     display: flex;
     flex-wrap: wrap;
 
+    max-width: 190px;
+
     padding-top: 18px;
 
     margin-right: 215px;
@@ -2045,6 +2085,8 @@ a {
 
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
+
+    margin-bottom: 5px;
 }
 
 .social-item:hover,
@@ -2056,7 +2098,7 @@ a {
     border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
-.social-item:not(:last-child) {
+.social-item:not(:nth-child(4n)) {
     margin-right: 11px;
 }
 
