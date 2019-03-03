@@ -1046,7 +1046,7 @@ input[type=password]::-ms-reveal{
 .filter-form-input:checked + .filter-form-check::before {
     background-image: url("../img/checkbox-on.svg");
     width: 24px;
-    height: 21px;
+    height: 20px;
 }
 
 .filter-form-input:focus + .filter-form-check::before ,
