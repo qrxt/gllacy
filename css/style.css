@@ -9,6 +9,13 @@ html {
 }
 
 body {
+    color: #ffffff;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+
+    min-width: 1200px;
+
     margin: 0;
     padding: 0;
 }
@@ -22,11 +29,6 @@ body {
 }
 
 .site-wrapper {
-    color: #ffffff;
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    
     background-color: #849d8f;
 
     padding-top: 9px;
@@ -127,6 +129,18 @@ a {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
+}
+
+input::-ms-clear {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+input[type=password]::-ms-reveal{
+    width: 0;
+    height: 0;
+    display: none;
 }
 
 .text-input:hover {
@@ -449,8 +463,10 @@ a {
 
 .personal-navigation-search {
     position: absolute;
-    right: 213px;
     top: 50px;
+    right: 213px;
+
+    width: 340px;
 
     border-radius: 5px;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -480,11 +496,13 @@ a {
     visibility: visible;
 }
 
-.search-form input{
+.search-form input {
     position: relative;
 
+    width: 100%;
+
     padding-top: 11px;
-    padding-right: 112px;
+    padding-right: 15px;
     padding-bottom: 12px;
     padding-left: 15px;
 }
@@ -533,6 +551,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
+
+    width: 280px;
 }
 
 .login-form input {
@@ -1415,6 +1435,7 @@ a {
     color: #ffffff;
     font-size: 18px;
     line-height: 24px;
+    font-weight: 700;
     
     margin-top: 35px;
     margin-left: auto;
@@ -1630,6 +1651,7 @@ a {
     color: #fefefe;
     font-size: 18px;
     line-height: 24px;
+    font-weight: 700;
 
     padding-top: 8px;
     padding-right: 19px;

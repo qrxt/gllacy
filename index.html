@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no">
   <title>Магазин «Глейси»</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="main-page">
@@ -242,29 +243,6 @@
             </form>
           </div>
         </div>
-
-        <section class="feedback">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <b class="feedback-title">Мы обязательно вам ответим!</b>
-          <form class="feedback-form" method="post" action="http://echo.htmlacademy.ru">
-            <p class="input-wrapper">
-              <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-              <input class="text-input" type="text" placeholder="Как вас зовут?" name="feedback-name"
-                id="feedback-name">
-            </p>
-            <p class="input-wrapper">
-              <label class="visually-hidden" for="feedback-email">Адрес электронной почты</label>
-              <input class="text-input" type="email" placeholder="Ваша почта для ответа?" name="feedback-email"
-                id="feedback-email">
-            </p>
-            <textarea class="text-input" name="feedback-message" id="feedback-message"
-              placeholder="Напишите что-нибудь..."></textarea>
-            <button class="feedback-form-btn btn" type="submit">Отправить</button>
-            <button class="feedback-form-close" aria-label="Закрыть">
-            </button>
-          </form>
-        </section>
-
       </main>
     </div>
 
@@ -342,6 +320,26 @@
       </footer>
     </div>
     <div class="overlay"></div>
+    <section class="feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <b class="feedback-title">Мы обязательно вам ответим!</b>
+      <form class="feedback-form" method="post" action="http://echo.htmlacademy.ru">
+        <p class="input-wrapper">
+          <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+          <input class="text-input" type="text" placeholder="Как вас зовут?" name="feedback-name" id="feedback-name">
+        </p>
+        <p class="input-wrapper">
+          <label class="visually-hidden" for="feedback-email">Адрес электронной почты</label>
+          <input class="text-input" type="email" placeholder="Ваша почта для ответа?" name="feedback-email"
+            id="feedback-email">
+        </p>
+        <textarea class="text-input" name="feedback-message" id="feedback-message"
+          placeholder="Напишите что-нибудь..."></textarea>
+        <button class="feedback-form-btn btn" type="submit">Отправить</button>
+        <button class="feedback-form-close" aria-label="Закрыть">
+        </button>
+      </form>
+    </section>
   </div>
   <script src="js/script.min.js"></script>
 </body>
