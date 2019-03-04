@@ -5,6 +5,8 @@ html {
 }
 
 *, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -131,18 +133,6 @@ a {
     font-weight: 400;
 }
 
-input::-ms-clear {
-    width: 0;
-    height: 0;
-    display: none;
-}
-
-input[type=password]::-ms-reveal{
-    width: 0;
-    height: 0;
-    display: none;
-}
-
 .text-input:hover {
     border-color: rgba(154, 154, 154, 0.5);
     box-shadow: inset 0 0 0 1px rgba(154, 154, 154, 0.5);
@@ -166,6 +156,7 @@ input[type=password]::-ms-reveal{
 .main-header {
     position: relative;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
 
     margin-bottom: 18px;
@@ -179,7 +170,9 @@ input[type=password]::-ms-reveal{
     position: relative;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
 
@@ -195,7 +188,9 @@ input[type=password]::-ms-reveal{
     padding-bottom: 22px;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     max-width: 700px;
@@ -234,8 +229,13 @@ input[type=password]::-ms-reveal{
 
 .feedback-form {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -307,6 +307,7 @@ input[type=password]::-ms-reveal{
 .personal-navigation {
     position: relative;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
 
     padding-top: 13px;
@@ -442,6 +443,7 @@ input[type=password]::-ms-reveal{
     background-position: 8px 7px;
 
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .search-button::after {
@@ -549,7 +551,11 @@ input[type=password]::-ms-reveal{
 
 .login-form {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     width: 280px;
@@ -568,12 +574,17 @@ input[type=password]::-ms-reveal{
 
 .login-form-wrapper {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
 }
 
 .login-form-links {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -790,7 +801,9 @@ input[type=password]::-ms-reveal{
     padding: 0;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     text-transform: lowercase;
@@ -937,7 +950,9 @@ input[type=password]::-ms-reveal{
     position: relative;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     color: #ffffff;
@@ -1062,6 +1077,7 @@ input[type=password]::-ms-reveal{
     position: relative;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
 
     background-color: rgba(255, 255, 255, 0.2);
@@ -1146,8 +1162,13 @@ input[type=password]::-ms-reveal{
 
 .order-form {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     color: #323232;
@@ -1369,9 +1390,13 @@ input[type=password]::-ms-reveal{
 
 .special-offers {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-pack: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     margin-bottom: 20px;
@@ -1379,7 +1404,9 @@ input[type=password]::-ms-reveal{
 
 .offer {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     border-radius: 15px;
@@ -1490,8 +1517,12 @@ input[type=password]::-ms-reveal{
     list-style: none;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1534,8 +1565,12 @@ input[type=password]::-ms-reveal{
 
 .blocks-wrapper {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     margin-bottom: 25px;
@@ -1616,9 +1651,15 @@ input[type=password]::-ms-reveal{
 
 .subscription-form {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1667,7 +1708,10 @@ input[type=password]::-ms-reveal{
     padding: 0;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     list-style: none;
@@ -1727,7 +1771,9 @@ input[type=password]::-ms-reveal{
     padding: 0;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -1739,8 +1785,14 @@ input[type=password]::-ms-reveal{
     position: relative;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 267px;
 
@@ -2003,7 +2055,10 @@ input[type=password]::-ms-reveal{
     position: relative;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 
     margin-bottom: 30px;
@@ -2051,6 +2106,8 @@ input[type=password]::-ms-reveal{
 }
 
 .pagination-previous {
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
     transform: scale(-1, 1);
     opacity: 0.2;
 
@@ -2070,7 +2127,9 @@ input[type=password]::-ms-reveal{
 
 .main-footer {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -2091,7 +2150,9 @@ input[type=password]::-ms-reveal{
     list-style: none;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     max-width: 190px;
@@ -2166,8 +2227,11 @@ input[type=password]::-ms-reveal{
     padding: 0;
 
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-line-pack: start;
     align-content: flex-start;
 
     width: 350px;
@@ -2270,21 +2334,46 @@ input[type=password]::-ms-reveal{
     z-index: 40;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0% {
-      transform: translateY(-2000px);
+      -webkit-transform: translateY(-2000px);
+              transform: translateY(-2000px);
     }
   
     70% {
-      transform: translateY(30px);
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
     }
   
     90% {
-      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
     }
   
     100% {
-      transform: translateY(0);
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    0% {
+      -webkit-transform: translateY(-2000px);
+              transform: translateY(-2000px);
+    }
+  
+    70% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+    }
+  
+    90% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
     }
 }
 
@@ -2294,13 +2383,15 @@ input[type=password]::-ms-reveal{
 }
 
 .modal-bounce {
+    -webkit-animation: bounce 0.5s;
     animation: bounce 0.5s;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
     0%,
     100% {
-      transform: translateX(0);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
   
     10%,
@@ -2308,17 +2399,44 @@ input[type=password]::-ms-reveal{
     50%,
     70%,
     90% {
-      transform: translateX(-10px);
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
     }
   
     20%,
     40%,
     60%,
     80% {
-      transform: translateX(10px);
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+}
+@keyframes shake {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
     }
 }
 
 .modal-error {
+    -webkit-animation: shake 0.5s;
     animation: shake 0.5s;
 }
