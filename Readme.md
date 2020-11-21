@@ -1,40 +1,33 @@
-# Личный проект «Глейси»
+# Gllacy
+![Dependencies](https://david-dm.org/qrxt/409751-gllacy-24.svg)
 
-* Студент: [Eugene Kalinowski](https://up.htmlacademy.ru/htmlcss/24/user/409751).
-* Наставник: [Сергей Кравченко].
+Gllacy - сайт магазина мороженого. Проект с курсов HTML Academy, простой статичный сайт без адаптивной верстки, но с большим количеством декоративных элементов.
 
----
+![slider](https://user-images.githubusercontent.com/46269438/99878558-53661100-2c17-11eb-8569-105b2b5abc58.gif)
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
+## Установка
+1. Используйте в нужном пустом каталоге `git clone git@github.com:qrxt/409751-gllacy-24.git .`
+2. Воспользуйтесь `npm install` для установки зависимостей
+3. Для запуска:
+    * Воспользуйтесь `npm run watch` для запуска сервера, посетите http://localhost:3000/
+    * Воспользуйтесь `npm run build` для генерации бандла. Бандл будет лежать в ./dist
 
----
+## Скриншоты и GIF
 
-### Памятка
+### Гифки
+![a](https://user-images.githubusercontent.com/46269438/99878655-25350100-2c18-11eb-8098-9a0705d4bc7e.gif)
 
-#### 1. Зарегистрируйтесь на Гитхабе
+### Скриншоты
+![image](https://user-images.githubusercontent.com/46269438/99878697-51e91880-2c18-11eb-9f29-94dd1ff51a2b.png)
+![cream](https://user-images.githubusercontent.com/46269438/99878726-72b16e00-2c18-11eb-954c-555785afd5c3.JPG)
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+## Демо
+На Github Pages: [Тык!](https://qrxt.github.io/409751-gllacy-24/index.html)
 
-#### 2. Создайте форк
+## Контакты
+- [Telegram](https://telegram.me/qrxt357)
+- [VK](https://vk.com/id106399922)
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/409751-gllacy-24) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037742-a62a72a0-7bad-11e7-9f36-4db8e9329498.jpg">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037746-a760c82c-7bad-11e7-89ab-7c99998d4317.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop», чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037747-a8e89422-7bad-11e7-819d-bca9f4c1de18.jpg">
-
-Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
 
 ---
 
