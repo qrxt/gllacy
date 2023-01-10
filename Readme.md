@@ -22,7 +22,7 @@ Gllacy - сайт магазина мороженого. Проект с кур�
 ![cream](https://user-images.githubusercontent.com/46269438/99878726-72b16e00-2c18-11eb-954c-555785afd5c3.JPG)
 
 ## Демо
-На Github Pages: [Тык!](https://qrxt.github.io/409751-gllacy-24/index.html)
+На Github Pages: [Тык!](https://qrxt.github.io/gllacy/index.html)
 
 ## Контакты
 - [Telegram](https://telegram.me/qrxt357)
